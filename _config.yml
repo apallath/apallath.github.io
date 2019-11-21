@@ -33,6 +33,8 @@ plugins:
 
 theme: minima
 
+skin: sunrise
+
 excerpt_separator: <!--more-->
 
 
