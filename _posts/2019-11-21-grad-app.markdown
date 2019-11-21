@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "Resources for Grad Applications"
+date: 2019-11-21 10:49:26 -0500
+categories: Miscellaneous
+---
+
+Resources which I found to be really useful for graduate admissions<!--more-->:
+
+# General advice
+[Advice for PhD Program Applications - pgbovine.net](http://www.pgbovine.net/grad-school-app-tips.htm)
+
+# Advice for writing good statements
+[Writing Your Graduate School Application Essay - CMU](https://www.cmu.edu/gcc/handouts-and-resources/handouts/grad-app-sop.pdf):
+The use of examples to separate well-written and poorly-written statements is why this handout is gold.
+
+[Statement of Purpose Guidelines - MIT](http://web.mit.edu/msrp/myMSRP/docs/Statement%20of%20purpose%20guidelines.pdf)
+
+[Writing the Statement of Purpose - Berkeley](https://grad.berkeley.edu/admissions/apply/statement-purpose/)
+
+# Personal advice
+
++ Start early. Identify your schools and groups early. Ask your recommenders for letters at least a month or two before the deadline.
++ If you know you're applying to graduate school, take the GRE and TOEFL (if that's a requirement for you) as early as possible. I took the GRE in my sophomore year, and TOEFL in my junior year.
++ Don't waste time writing to faculty. Focus on writing a good statement instead.
++ Identify which projects you want to work on and elaborate on them in your statements.
++ Read through recent papers - don't just look at group webpages. Quite often, these pages are outdated and do not reflect the current research focus of the lab.
++ Ask qualified people (faculty, current grad students) to review your statement.
