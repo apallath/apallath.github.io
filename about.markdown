@@ -29,7 +29,7 @@ GPA: 8.91/10.0
 ------
 + Scripting and programming
     * `Python`
-    * `C++``
+    * `C++`
     * `Bash`
     * `MATLAB`
 
