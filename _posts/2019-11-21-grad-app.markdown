@@ -5,7 +5,7 @@ date: 2019-11-21 10:49:26 -0500
 categories: Miscellaneous
 ---
 
-Resources which I found to be really useful for graduate admissions<!--more-->:
+Resources which I found to be really useful for graduate applications<!--more-->:
 
 # General advice
 [Advice for PhD Program Applications - pgbovine.net](http://www.pgbovine.net/grad-school-app-tips.htm)
