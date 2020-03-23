@@ -80,13 +80,17 @@ using computational hardness to prevent manipulation, bribery and control.
 
 + Chemical Engineering
 
-    `Chemical Kinetics and Reactor Design` `Advanced Molecular Thermodynamics` `Transport Processes` `Introduction to Polymers` `Advanced Engineering Mathematics`
+    `Chemical Kinetics and Reactor Design` `Advanced Molecular Thermodynamics` `Transport Processes` `Introduction to Polymers`
+
++ Mathematics
+
+    `Advanced Engineering Mathematics`
 
 # Undergraduate Coursework
 ------
 + Computer Science Courses
 
-    `Probability and Random Processes` `Data Structures` `Algorithm Analysis and Design` `Computational Complexity Theory` `Topics in Complexity Science` `Pattern Recognition and Machine Learning` `Nature Inspired Computing` `Special Topics in CSE`
+    `Data Structures` `Algorithm Analysis and Design` `Computational Complexity Theory` `Topics in Complexity Science` `Pattern Recognition and Machine Learning` `Nature Inspired Computing` `Special Topics in CSE`
 
 + Chemical Engineering Courses
 
@@ -100,15 +104,15 @@ using computational hardness to prevent manipulation, bribery and control.
 
     `Condensed Matter Physics` `Statistical Mechanics` `Electrodynamics and Quantum Mechanics` `General Chemistry` `Physics Lab` `Chemistry Lab`
 
++ Mathematics
+
+    `Real Analysis and Calculus` `Linear Algebra and ODE` `Complex Analysis and PDE` `Probability, Statistics and Numerical Methods` `Probability and Random Processes`
+
 + Humanities and Social Science Courses
 
     `Global Political Economy` `Classics of World Literature, Politics and Economics` `World History` `Philosophy` `Economics`
 
-+ Mathematics
-
-    `Real Analysis and Calculus` `Linear Algebra and ODE` `Complex Analysis and PDE` `Probability, Statistics and Numerical Methods`
-
-# Undergraduate Teaching Experience
+# Undergraduate TA Experience
 ------
 
 **ES112 - Computing**, IIT Gandhinagar (Fall 2018)
