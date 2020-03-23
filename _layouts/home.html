@@ -13,25 +13,5 @@ layout: default
     <div style="clear:left">
     <br>
 
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <span class="post-meta">| Filed Under: {{ post.categories }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {{ post.excerpt }}
-      </li>
-      {%- endfor -%}
-    </ul>
-
-    </div>
-  {%- endif -%}
-
+    <a class="twitter-timeline" href="https://twitter.com/PallathAkash?ref_src=twsrc%5Etfw">Tweets by PallathAkash</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
