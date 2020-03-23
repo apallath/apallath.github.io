@@ -22,9 +22,11 @@ title: Akash Pallath
 email: apallath@seas.upenn.edu
 description: >- # this means to ignore newlines until "baseurl:"
     Penn Institute for Computational Science (PICS) | 3401 Walnut St | Philadelphia, PA
-baseurl: "/~apallath/" # the subpath of your site, e.g. /blog
-url: "https://seas.upenn.edu" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  apallath
+#baseurl: "/~apallath/" # the subpath of your site, e.g. /blog
+#url: "https://seas.upenn.edu" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: ""
+url: ""
+github_username: apallath
 linkedin: akash-pallath
 
 # Build settings
@@ -36,8 +38,6 @@ theme: minima
 skin: sunrise
 
 excerpt_separator: <!--more-->
-
-
 
 # Exclude from processing.
 # The following items will not be processed, by default.
