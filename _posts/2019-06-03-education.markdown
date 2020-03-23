@@ -5,9 +5,9 @@ date: 2019-06-03 10:00:00 -0500
 categories: Miscellaneous
 ---
 
-An article which I co-authored with Ansh Joshi and Deepak Dhariwal about the issues India needs to address to reform its education system:<!--more-->
+An article which I co-authored with Ansh Joshi and Deepak Dhariwal about the issues India needs to address to reform its education system<!--more-->:
 
-*The education system, with terrible teaching that programs Indians to focus on tests, must change and put a focus on learning instead.*
+***The education system, with terrible teaching that programs Indians to focus on tests, must change and put a focus on learning instead.***
 
 In 2018, Apple’s co-founder, Steve Wozniak, visited India and made some fascinating observations on the country. He was humble enough to admit he knew little about India, but he remarked that he did not see “big advances in tech companies” in the country. He blamed the culture, which he saw as “one of success based upon academic excellence” and “having a good job.”
 
