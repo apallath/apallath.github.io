@@ -50,23 +50,27 @@ using computational hardness to prevent manipulation, bribery and control.
 ------
 + Scripting and programming
 
-    `Python` `C++` `Bash` `MATLAB` `Java` `Netlogo`
+    `Python` `C` `C++` `MATLAB` `Netlogo`
 
-+ Molecular simulation
++ Molecular simulation software
 
-    `GROMACS` `LAMMPS` `VMD`   
+    `GROMACS` `LAMMPS` `VMD`
 
-+ Machine learning
++ Deep learning toolkits
 
-    `scikit-learn` `PyTorch`
+    `PyTorch` `Keras` `scikit-learn`
+
++ HPC libraries
+
+    `OpenMP/C` `MPI/C`
 
 + Other tools
 
-    `LaTeX` `Git`
+    `Bash` `LaTeX` `Git`
 
 + Web development tools
 
-    `Jekyll` `Django` `PHP`
+    `Django` `PHP` `Jekyll` `HTML5` `CSS3`
 
 # Graduate Coursework
 ------
@@ -82,24 +86,27 @@ using computational hardness to prevent manipulation, bribery and control.
 ------
 + Computer Science Courses
 
-    `Pattern Recognition and Machine Learning` `Nature Inspired Computing` `Topics in Complexity Science` `Computational Complexity Theory`
-    `Algorithm Analysis and Design` `Data Structures` `Probability and Random Processes` `Special Topics in CSE`
+    `Probability and Random Processes` `Data Structures` `Algorithm Analysis and Design` `Computational Complexity Theory` `Topics in Complexity Science` `Pattern Recognition and Machine Learning` `Nature Inspired Computing` `Special Topics in CSE`
 
 + Chemical Engineering Courses
 
-    `Process Synthesis and Design` `Process Dynamics and Control Lab` `Process Analysis and Simulation` `Process Control` `Mass Transfer and Reaction Engineering Lab` `Separation Processes` `Heat and Mass Transfer` `Heat Transfer and Thermodynamics Lab` `Reaction Engineering` `Chemical Engineering Thermodynamics` `Chemical Process Calculations` `Fluid Mechanics` `Fluid Mechanics Lab`
+    `Chemical Process Calculations` `Fluid Mechanics` `Heat and Mass Transfer` `Chemical Engineering Thermodynamics` `Chemical Reaction Engineering` `Separation Processes` `Process Control` `Process Synthesis and Design` `Process Analysis and Simulation` `Fluid Mechanics Lab` `Heat Transfer and Thermodynamics Lab` `Process Dynamics and Control Lab` `Mass Transfer and Reaction Engineering Lab`    
 
 + Engineering Courses
 
-     `Mechanics of Solids` `Materials` `Thermodynamics` `Design and Innovation` `Manufacturing and Workshop` `Electrical Systems` `Electrical and Electronics Lab` `Analog and Digital Electronics` `Engineering Graphics`
+     `Thermodynamics` `Materials` `Mechanics of Solids` `Engineering Graphics` `Manufacturing and Workshop` `Electrical Systems` `Electrical and Electronics Lab` `Analog and Digital Electronics` `Design`
 
 + Basic Science Courses
 
-    `Condensed Matter Physics` `Statistical Mechanics` `Electrodynamics and Quantum Mechanics` `Physics Lab` `Chemistry` `Chemistry Lab`
+    `Condensed Matter Physics` `Statistical Mechanics` `Electrodynamics and Quantum Mechanics` `General Chemistry` `Physics Lab` `Chemistry Lab`
 
 + Humanities and Social Science Courses
 
-    `Global Political Economy` `Classics of World Literature, Politics and Economics` `World History` `Philosophy` `Economics` `French` `English` `Japan Studies`
+    `Global Political Economy` `Classics of World Literature, Politics and Economics` `World History` `Philosophy` `Economics`
+
++ Mathematics
+
+    `Real Analysis and Calculus` `Linear Algebra and ODE` `Complex Analysis and PDE` `Probability, Statistics and Numerical Methods`
 
 # Undergraduate Teaching Experience
 ------
