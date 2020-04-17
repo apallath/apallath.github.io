@@ -47,7 +47,7 @@ ul{
     .business-header {
   height: 50vh;
   min-height: 300px;
-  background-image: url("background.jpg");
+  background-image: url("water_box.jpg");
   background-size: 400% 400%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -61,7 +61,7 @@ ul{
      .business-header {
     height: 30vh;
     min-height: 150px;
-    background-image: url("background.jpg");
+    background-image: url("water_box.jpg");
     background-size: 400% 400%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
