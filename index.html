@@ -11,8 +11,8 @@
     <title>Akash Pallath</title>
 
     <!--Boostrap-->
-    <!-- CSS only -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Default CSS -->
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">-->
 
     <!-- JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -51,6 +51,13 @@
                     <li class="nav-item">
                         <a class="nav-link" href="https://twitter.com/PallathAkash" target="_"><i class="fab fa-twitter"></i></a>
                     </li>
+                    <li id="theme-button" class="dropdown">
+                      <button href="#" class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">Mode <b class="caret"></b></button>
+                      <ul class="dropdown-menu ">
+                        <li><a href="#" class="dropdown-item theme-link active" data-theme="default">Light</a></li>
+                        <li><a href="#" class="dropdown-item theme-link" data-theme="darkly">Dark</a></li>
+                      </ul>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -66,7 +73,7 @@
         </div>
     </div>
 
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron bg-dark jumbotron-fluid">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-3 text-right">
@@ -103,7 +110,7 @@
                                 I am a member of the <a href="http://patelgroup.seas.upenn.edu" target="_blank">Patel Research Group</a>
                                 at the <a href="https://pics.upenn.edu" target="_blank">Penn Institute for Computational Science</a> since November 2019.
                             </p>
-                            <p> I study biological systems at the nanoscale using high performance computing and data science.
+                            <p> I study proteins at the nanoscale using high performance computing and data science.
                                 At present, I am working on a couple of problems under the broad topic of protein hydration and interactions - including binding, denaturation, and allosteric interactions -
                                 using enhanced molecular dynamics simulation techniques.
                             </p><p>
@@ -129,8 +136,8 @@
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">Protein hydration and interactions</li>
                             <li class="list-group-item">Enhanced molecular dynamics sampling</li>
-                            <li class="list-group-item">Applications of deep learning in molecular simulation</li>
                             <li class="list-group-item">SARS-CoV-2</li>
+                            <li class="list-group-item">Deep learning in molecular simulation</li>
                         </ul>
                     </div>
                 </div>
@@ -525,5 +532,23 @@
             </div>
         </footer>
     </body>
+
+    <script>
+    var themes = {
+        "default": "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css",
+        "darkly" : "https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/darkly/bootstrap.min.css",
+    }
+
+    $(function(){
+       var themesheet = $('<link href="'+themes['default']+'" rel="stylesheet" />');
+       themesheet.appendTo('head');
+       $('.theme-link').click(function(){
+           $(".theme-link.active").removeClass("active");
+           $(this).addClass("active")
+           var themeurl = themes[$(this).attr('data-theme')];
+           themesheet.attr('href', themeurl);
+       });
+    });
+    </script>
 
     </html>

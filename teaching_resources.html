@@ -50,12 +50,19 @@
                     <li class="nav-item">
                         <a class="nav-link" href="https://twitter.com/PallathAkash" target="_"><i class="fab fa-twitter"></i></a>
                     </li>
+                    <li id="theme-button" class="dropdown">
+                      <button href="#" class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">Mode <b class="caret"></b></button>
+                      <ul class="dropdown-menu ">
+                        <li><a href="#" class="dropdown-item theme-link active" data-theme="default">Light</a></li>
+                        <li><a href="#" class="dropdown-item theme-link" data-theme="darkly">Dark</a></li>
+                      </ul>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid bg-dark">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12 text-center">
@@ -149,5 +156,23 @@
             </div>
         </footer>
     </body>
+
+    <script>
+    var themes = {
+        "default": "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css",
+        "darkly" : "https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/darkly/bootstrap.min.css",
+    }
+
+    $(function(){
+       var themesheet = $('<link href="'+themes['default']+'" rel="stylesheet" />');
+       themesheet.appendTo('head');
+       $('.theme-link').click(function(){
+           $(".theme-link.active").removeClass("active");
+           $(this).addClass("active")
+           var themeurl = themes[$(this).attr('data-theme')];
+           themesheet.attr('href', themeurl);
+       });
+    });
+    </script>
 
     </html>
