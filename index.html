@@ -14,11 +14,6 @@
     <!-- Default CSS -->
     <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">-->
 
-    <!-- JS, Popper.js, and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
     <!-- Custom styles for this template -->
     <link href="css/business-frontpage.css" rel="stylesheet">
 
@@ -64,7 +59,8 @@
     </nav>
 
     <!-- Header with Background Image -->
-    <div class="business-header" style="--background: url('css/sars_cov_2_rbd_ace.jpg'); position: relative;">
+    <div class="business-header parallax-window" data-parallax="scroll" data-speed="0.5" data-image-src="css/sars_cov_2_rbd_ace.jpg">
+        <!-- style="background: url('css/sars_cov_2_rbd_ace.jpg'); position: relative;"-->
         <div class="container">
             <div class="row">
                 <div class="col-lg-12" style="position: absolute; bottom: 0; left: 0;">
@@ -493,7 +489,8 @@
             <!-- /.row -->
         </div>
 
-        <div class="business-header" style="--background: url('css/solvated_ubq.jpg'); position: relative">
+        <div class="business-header parallax-window" data-parallax="scroll" data-speed="0.5" data-image-src="css/solvated_ubq.jpg">
+            <!--style="background: url('css/solvated_ubq.jpg'); position: relative"-->
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12" style="position: absolute; bottom: 0; left: 0;">
@@ -532,6 +529,14 @@
             </div>
         </footer>
     </body>
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <!-- Parallax -->
+    <script src="js/parallax.js-1.5.0/parallax.js"></script>
 
     <script>
     var themes = {
