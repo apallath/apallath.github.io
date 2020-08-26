@@ -47,11 +47,11 @@
                         <a class="nav-link" href="https://twitter.com/PallathAkash" target="_"><i class="fab fa-twitter"></i></a>
                     </li>
                     <li id="theme-button" class="dropdown">
-                      <button href="#" class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">Mode <b class="caret"></b></button>
-                      <ul class="dropdown-menu ">
-                        <li><a href="#" class="dropdown-item theme-link active" data-theme="default">Light</a></li>
-                        <li><a href="#" class="dropdown-item theme-link" data-theme="darkly">Dark</a></li>
-                      </ul>
+                        <button href="#" class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">Mode <b class="caret"></b></button>
+                        <ul class="dropdown-menu ">
+                            <li><a href="#" class="dropdown-item theme-link active" data-theme="default">Light</a></li>
+                            <li><a href="#" class="dropdown-item theme-link" data-theme="darkly">Dark</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -73,7 +73,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-3 text-right">
-                    <img src="akash.jpg" class="rounded-circle" style="height:100px; width:auto">
+                    <img src="akash.jpg" class="rounded-circle" style="height:120px; width:auto">
                 </div>
                 <div class="col-sm-9">
                     <h1 class="display-4" style="font-family: 'Gentium Basic', serif">Akash Pallath</h1>
@@ -100,26 +100,30 @@
                         <div class="card-header">
                             <b>About Me</b>
                         </div>
-                        <div class="card-body">
-                            <p>I'm a PhD student in Chemical and Biomolecular Engineering at the
-                                <a href="https://www.upenn.edu/" target="_blank">University of Pennsylvania</a>.
-                                I am a member of the <a href="http://patelgroup.seas.upenn.edu" target="_blank">Patel Research Group</a>
-                                at the <a href="https://pics.upenn.edu" target="_blank">Penn Institute for Computational Science</a> since November 2019.
-                            </p>
-                            <p> I study proteins at the nanoscale using high performance computing and data science.
-                                At present, I am working on a couple of problems under the broad topic of protein hydration and interactions - including binding, denaturation, and allosteric interactions -
-                                using enhanced molecular dynamics simulation techniques.
-                            </p><p>
-                                I graduated from the <a href="https://iitgn.ac.in/" target="_blank">Indian Institute of Technology (IIT) Gandhinagar</a> in August 2019 with a bachelors degree in Chemical Engineering with a minor in Computer Science and Engineering.
-                                My undergraduate research at
-                                <a href="https://iitgn.ac.in/" target="_blank">IIT Gandhinagar</a>,
-                                <a href="https://caltech.edu/" target="_blank">Caltech</a> and
-                                <a href="https://jaist.ac.jp/" target="_blank">JAIST</a> included the study of interfacial fluctuations using molecular dynamics,
-                                heat transport in amorphous materials using molecular dynamics,
-                                performance benchmarking for density functional theory calculations,
-                                and some theoretical computer science research. I was also a competitive programmer, and participated
-                                in the <a href="https://icpc.global" target="_">ACM-ICPC</a> India Regionals in 2017.
-                            </p>
+                                <div class="card-body">
+                                    <p>I am a PhD candidate in Chemical and Biomolecular Engineering at the
+                                        <a href="https://www.upenn.edu/" target="_blank">University of Pennsylvania</a>.
+                                        I am a member of the <a href="http://patelgroup.seas.upenn.edu" target="_blank">Patel Research Group</a>
+                                        at the <a href="https://pics.upenn.edu" target="_blank">Penn Institute for Computational Science</a> since November 2019.
+                                    </p>
+                                    <p> I study proteins at the nanoscale using high performance computing.
+                                        The focus of my research is to predict the effect of hydration on protein structure, function, and intermolecular interactions.
+                                        To do this, I use enhanced molecular modeling and simulation techniques developed or honed at the Patel group, combined with large scale data analysis and prediction algorithms.
+                                        The simulation techniques we use at the Patel group (such as <a href="http://patelgroup.seas.upenn.edu/indus.html" target="_">INDUS</a>) allow us to simulate events that would take normally take several months to years of compute time on massively parallel clusters in the matter of hours to a few days.
+                                    </p><p>
+                                        I graduated from the <a href="https://iitgn.ac.in/" target="_blank">Indian Institute of Technology (IIT) Gandhinagar</a> in 2019 with a bachelors degree in Chemical Engineering with a minor in Computer Science and Engineering.
+                                        My undergraduate research at
+                                        <a href="https://iitgn.ac.in/" target="_blank">IIT Gandhinagar</a>,
+                                        <a href="https://caltech.edu/" target="_blank">Caltech</a> and
+                                        <a href="https://jaist.ac.jp/" target="_blank">JAIST</a> included the study of interfacial fluctuations using molecular dynamics,
+                                        heat transport in amorphous materials using molecular dynamics,
+                                        performance benchmarking for density functional theory calculations,
+                                        and some theoretical computer science research. I was also a competitive programmer, and participated
+                                        in the <a href="https://icpc.global" target="_">ACM-ICPC</a> India Regionals in 2017.
+                                    </p><p>
+                                        When I'm not busy reading papers, writing code or trying to make sense of my simulation results, I can be found playing the guitar, playing with my girlfriend's and my cat <a href="https://www.instagram.com/hellodandankitty/" target="_">Dan-Dan</a>, or (COVID-19 pending) trying out new restaurants and bars.
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -146,7 +150,7 @@
                         <div class="card-body">
                             <h5 class="card-title">INDUSAnalysis</h5>
                             <p class="card-text">Package for analyzing solvated protein simulation data generated using the
-                                GROMACS implementatation of INDUS.</p>
+                                GROMACS implementation of INDUS.</p>
                                 <a href="https://github.com/apallath/INDUSAnalysis" target="_blank" class="btn btn-info">
                                     <i class="fab fa-github"></i> Source
                                 </a>
@@ -545,14 +549,14 @@
     }
 
     $(function(){
-       var themesheet = $('<link href="'+themes['default']+'" rel="stylesheet" />');
-       themesheet.appendTo('head');
-       $('.theme-link').click(function(){
-           $(".theme-link.active").removeClass("active");
-           $(this).addClass("active")
-           var themeurl = themes[$(this).attr('data-theme')];
-           themesheet.attr('href', themeurl);
-       });
+        var themesheet = $('<link href="'+themes['default']+'" rel="stylesheet" />');
+        themesheet.appendTo('head');
+        $('.theme-link').click(function(){
+            $(".theme-link.active").removeClass("active");
+            $(this).addClass("active")
+            var themeurl = themes[$(this).attr('data-theme')];
+            themesheet.attr('href', themeurl);
+        });
     });
     </script>
 
