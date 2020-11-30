@@ -72,7 +72,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-3 text-right">
-                    <img src="akash.jpg" class="rounded-circle" style="height:120px; width:auto">
+                    <img src="akash.jpg" class="rounded-circle" style="height:120px; width:auto; box-shadow: 0px 0px 10px #fff;">
                 </div>
                 <div class="col-sm-9">
                     <h1 class="display-4 titlefont">Akash Pallath</h1>
@@ -103,23 +103,49 @@
                                 <a href="https://www.upenn.edu/" target="_blank">University of Pennsylvania</a>.
                                 I am a member of the <a href="http://patelgroup.seas.upenn.edu" target="_blank">Patel Research Group</a>, affiliated with
                                 the <a href="https://pics.upenn.edu" target="_blank">Penn Institute for Computational Science</a>, since November 2019.
+                                I conduct research at the interface of biology, chemistry, and computational science.
                             </p>
-                            <img src="hyd.jpg" width="200px" class="rounded float-right">
-                            <p> I study the effects of hydration on protein structure and function using high performance computing, to help inform the design of novel drugs and therapeutics.
-                                To do this, I use enhanced molecular modeling and atomistic simulation techniques developed or honed at the Patel group, combined with large scale data analysis and prediction algorithms.
-                                The simulation techniques we use at the Patel group (such as <a href="http://patelgroup.seas.upenn.edu/indus.html" target="_">INDUS</a>) allow us to simulate and gather statistics about events several
-                                orders of magnitude faster than traditional techniques. This allows us to study events which would traditionally
-                                take several months to years of compute time on massively parallel clusters in the matter of hours to a few days.
+                            <figure class="figure float-right">
+                                <img src="hyd.jpg" width="200px" class="rounded">
+                                <figcaption class="figure-caption text-center">Fig: Ubiquitin in water</figcaption>
+                            </figure>
+                            <p> Biology happens in water, therefore understanding how the smallest components of biological systems interact with water at the
+                                nanoscale is essential to glean insight into the complex chemistry of life.
+                                At the Patel group, I use high performance computing to study the effect of hydration on protein structure, stability,
+                                and interactions.
+                                My aim is to use the understanding we gain from these studies to help inform the design of future drugs and therapeutics.
                             </p><p>
-                                I graduated from the <a href="https://iitgn.ac.in/" target="_blank">Indian Institute of Technology (IIT) Gandhinagar</a> in 2019 with a bachelors degree in Chemical Engineering with a minor in Computer Science and Engineering.
-                                My undergraduate research at
-                                <a href="https://iitgn.ac.in/" target="_blank">IIT Gandhinagar</a>,
-                                <a href="https://caltech.edu/" target="_blank">Caltech</a> and
-                                <a href="https://www.jaist.ac.jp/english/" target="_blank">JAIST</a> included the study of interfacial fluctuations using molecular dynamics,
+                                My research methodology can be divided into three key steps:
+                                <ul>
+                                    <li>The first step involves developing and applying enhanced atomistic simulation methods to observe and gather data about
+                                        rare events several orders of magnitudes faster than traditional computational techniques. One technique that I use,
+                                        which is central to the work we do at the Patel group, is <a href="http://patelgroup.seas.upenn.edu/indus.html" target="_">INDUS</a>.
+                                    </li>
+                                    <li>The second step involves developing algorithms and frameworks to efficiently analyze the large volumes of data that
+                                        these atomistic simulations yield. Two public frameworks which I'm currently writing for analysing my data are
+                                        <a href="#indusanalysis">INDUSAnalysis</a> and <a href="#wham">WHAM</a>. Most of my code, however, is private at the
+                                        moment.
+                                    </li>
+                                    <li>The final, and most crucial step, involves developing new ways to visualize our results to help us communicate our
+                                        insights to the scientific community.
+                                    </li>
+                                </ul>
+                            </p><p>
+                                I am passionate about using computation to solve challenging problems.
+                                Prior to starting my PhD at Penn, I worked in research settings at
+                                <a href="https://caltech.edu/" target="_blank">Caltech</a>,
+                                <a href="https://www.jaist.ac.jp/english/" target="_blank">JAIST</a> (Japan),
+                                and <a href="https://iitgn.ac.in/" target="_blank">IIT Gandhinagar</a> (India)
+                                on a variety of interdisciplinary problems in applied physics, materials science, chemistry, and computer science. These
+                                included the study of interfacial fluctuations using molecular dynamics,
                                 heat transport in amorphous materials using molecular dynamics,
                                 performance benchmarking for density functional theory calculations,
-                                and theoretical computer science research in the field of computational social choice. I was also a competitive programmer, and participated
+                                and theoretical computer science research in the field of computational social choice.
+                                I used computational tools and developed algorithms and frameworks - and in one instance, assembled parallel computing hardware - to solve these problems.
+                            </p><p>
+                                I was also a part-time competitive programmer, and participated
                                 in the <a href="https://icpc.global" target="_">ACM-ICPC</a> India Regionals in 2017.
+                            </p>
                             <p>Click <a href="https://drive.google.com/file/d/1-xLeiddmKd4QOPL5jzBohucKtdkdlG3Y/view?usp=sharing" target="_">here</a> for a copy of my CV.</p>
                             </div>
                         </div>
@@ -147,9 +173,10 @@
                     <div class="card-header">
                         <b>Software I've written for my research</b>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body" id="indusanalysis">
+                        <img src="indusanalysis.jpg" class="rounded float-right" style="height: 120px; width: auto">
                         <h5 class="card-title">INDUSAnalysis</h5>
-                        <p class="card-text">Package for computing and analyzing various order parameters from solvated protein simulation data generated using the INDUS patch to GROMACS.</p>
+                        <p class="card-text">Package for computing and analyzing various order parameters from solvated protein simulation data generated using the in-house implementation of dynamic INDUS in GROMACS.</p>
                         <a href="https://github.com/apallath/INDUSAnalysis" target="_blank" class="btn btn-info">
                             <i class="fab fa-github"></i> Source
                         </a>
@@ -157,9 +184,10 @@
                             Documentation
                         </a>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body" id="wham">
+                        <img src="wham.jpg" class="rounded float-right" style="height: 120px; width: auto">
                         <h5 class="card-title">WHAM</h5>
-                        <p class="card-text">Package for computing free energy profiles from umbrella sampling MD data using the (binned) weighted histogram
+                        <p class="card-text">Package for computing free energy profiles from multi-state MD data using the (binned) weighted histogram
                             analysis method (WHAM) and the (binless) multistate Bennett acceptance ratio (MBAR) method.</p>
                             <a href="https://github.com/apallath/WHAM" target="_blank" class="btn btn-info">
                                 <i class="fab fa-github"></i> Source
