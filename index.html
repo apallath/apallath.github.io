@@ -12,7 +12,9 @@
 
     <!--Boostrap-->
     <!-- Default CSS -->
-    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">-->
+    <noscript>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    </noscript>
 
     <!-- Custom styles for this template -->
     <link href="css/business-frontpage.css" rel="stylesheet">
@@ -35,6 +37,18 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home / About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resources.html">Resources</a>
+                    </li>
+                </ul>
+
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="https://www.linkedin.com/in/akash-pallath/" target="_"><i class="fab fa-linkedin"></i></a>
@@ -48,8 +62,8 @@
                     <li id="theme-button" class="dropdown">
                         <button href="#" class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">Mode <b class="caret"></b></button>
                         <ul class="dropdown-menu ">
-                            <li><a href="#" class="dropdown-item theme-link active" data-theme="default">Light</a></li>
-                            <li><a href="#" class="dropdown-item theme-link" data-theme="darkly">Dark</a></li>
+                            <li><a href="#" class="dropdown-item theme-link active" data-theme="default" id="lighttheme">Light</a></li>
+                            <li><a href="#" class="dropdown-item theme-link" data-theme="darkly" id="darktheme">Dark</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -93,28 +107,80 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
+                <noscript>
+                    <div class="alert alert-danger center" style="width:100%;" role="alert">
+                      <h4 class="alert-heading">No Javascript!</h4>
+                      Your browser has disabled Javascript. Some features of this website will not work without Javascript.
+                    </div>
+                </noscript>
                 <div class="row">
                     <div class="card">
                         <div class="card-header">
-                            <b>About Me</b>
+                            <b>About me</b>
                         </div>
                         <div class="card-body">
-                            <p> I am a PhD student in Chemical and Biomolecular Engineering at the
-                                <a href="https://www.upenn.edu/" target="_blank">University of Pennsylvania</a>.
-                                I am a member of the <a href="http://patelgroup.seas.upenn.edu" target="_blank">Patel Research Group</a>, affiliated with
-                                the <a href="https://pics.upenn.edu" target="_blank">Penn Institute for Computational Science</a>, since November 2019.
-                                I conduct research at the interface of biology, chemistry, and computational science.
+                            <p> I am a PhD student in <a href="https://cbe.seas.upenn.edu" target="_blank">Chemical and Biomolecular Engineering</a> at the
+                                <a href="https://www.upenn.edu/" target="_blank">University of Pennsylvania</a>,
+                                where I'm advised by <a href="http://patelgroup.seas.upenn.edu/amish.html" target="_blank">Dr. Amish Patel</a>.
+                                We are part of the <a href="https://pics.upenn.edu" target="_blank">Penn Institute for Computational Science</a>. I conduct research at the interface of biology, chemistry, and computational science.
                             </p>
+                            <p>
+                                I am passionate about using computation to solve challenging problems. My graduate research is
+                                focused around studying protein hydration at an atomistic scale using a variety of computational tools.
+                                Prior to starting graduate school, I worked in research labs at
+                                <a href="https://caltech.edu/" target="_blank">Caltech</a>,
+                                <a href="https://www.jaist.ac.jp/english/" target="_blank">JAIST</a> (Japan),
+                                and <a href="https://iitgn.ac.in/" target="_blank">IIT Gandhinagar</a> (India)
+                                on a variety of interdisciplinary problems in applied physics, materials science, chemistry, and computer science.
+                                These included the study of interfacial fluctuations using molecular dynamics (with <a href="http://kaustubhrane.people.iitgn.ac.in" target="_blank">Dr. Kaustubh Rane</a> at IIT Gandhinagar),
+                                heat transport in amorphous materials using molecular dynamics (in <a href="https://www.minnich.caltech.edu" target="_blank">Dr. Austin Minnich</a>'s lab at Caltech),
+                                performance benchmarking for density functional theory calculations (in <a href="https://www.jaist.ac.jp/english/areas/ee/laboratory/maezono.html" target="_blank">Dr. Ryo Maezono</a>'s lab at JAIST),
+                                and theoretical computer science research in the field of computational social choice (with <a href="http://neeldhara.com" target="_blank">Dr. Neeldhara Misra</a> at IIT Gandhinagar).
+                                I used computational tools and developed algorithms and frameworks - and in one instance, assembled parallel computing hardware - to solve these problems.
+                            </p><p>
+                                I was also an amateur competitive programmer, and participated
+                                in the <a href="https://icpc.global" target="_">ACM-ICPC</a> India Regionals in 2017.
+                            </p>
+                            <p>Click <a href="https://drive.google.com/file/d/1-xLeiddmKd4QOPL5jzBohucKtdkdlG3Y/view?usp=sharing" target="_">here</a> for a copy of my CV.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="card" style="width:100%">
+                <div class="card-header">
+                    <b>Research interests</b>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Effects of hydration on protein structure &nbsp; <span class="badge badge-primary">Primary focus</span></li>
+                    <li class="list-group-item">Enhanced molecular dynamics (MD) sampling &nbsp; <span class="badge badge-success">Methods</span></li>
+                    <li class="list-group-item">Machine learning applications in MD &nbsp; <span class="badge badge-success">Methods</span></li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="card">
+                        <div class="card-header">
+                            <b>Research overview</b>
+                        </div>
+                        <div class="card-body">
                             <figure class="figure float-right">
                                 <img src="hyd.jpg" width="200px" class="rounded">
                                 <figcaption class="figure-caption text-center">Fig: Ubiquitin in water</figcaption>
                             </figure>
-                            <p> Biology happens in water, therefore understanding how the smallest components of biological systems interact with water at the
+                            <p>
+                                Biology happens in water, therefore understanding how the smallest components of biological systems interact with water at the
                                 nanoscale is essential to glean insight into the complex chemistry of life.
-                                At the Patel group, I use high performance computing to study the effect of hydration on protein structure, stability,
+                                At the Patel group, I use high performance computing to study the effect of hydration on protein structure
                                 and interactions.
                                 My aim is to use the understanding we gain from these studies to help inform the design of future drugs and therapeutics.
-                            </p><p>
+                            </p>
+                            <p>
                                 My research methodology can be divided into three key steps:
                                 <ul>
                                     <li>The first step involves developing and applying enhanced atomistic simulation methods to observe and gather data about
@@ -128,140 +194,85 @@
                                         insights to the scientific community.
                                     </li>
                                 </ul>
-                            </p><p>
-                                I am passionate about using computation to solve challenging problems.
-                                Prior to starting my PhD at Penn, I worked in research settings at
-                                <a href="https://caltech.edu/" target="_blank">Caltech</a>,
-                                <a href="https://www.jaist.ac.jp/english/" target="_blank">JAIST</a> (Japan),
-                                and <a href="https://iitgn.ac.in/" target="_blank">IIT Gandhinagar</a> (India)
-                                on a variety of interdisciplinary problems in applied physics, materials science, chemistry, and computer science. These
-                                included the study of interfacial fluctuations using molecular dynamics,
-                                heat transport in amorphous materials using molecular dynamics,
-                                performance benchmarking for density functional theory calculations,
-                                and theoretical computer science research in the field of computational social choice.
-                                I used computational tools and developed algorithms and frameworks - and in one instance, assembled parallel computing hardware - to solve these problems.
-                            </p><p>
-                                I was also a part-time competitive programmer, and participated
-                                in the <a href="https://icpc.global" target="_">ACM-ICPC</a> India Regionals in 2017.
                             </p>
-                            <p>Click <a href="https://drive.google.com/file/d/1-xLeiddmKd4QOPL5jzBohucKtdkdlG3Y/view?usp=sharing" target="_">here</a> for a copy of my CV.</p>
-                            </div>
+                            <p>
+                                Visit the <a href="projects.html">projects</a> page for links to software packages I have developed for analyzing data and streamlining my research workflow.
+                            </p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="card" style="width:100%">
-                    <div class="card-header">
-                        <b>Research interests</b>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Effects of hydration on protein structure &nbsp; <span class="badge badge-primary">Primary focus</span></li>
-                        <li class="list-group-item">Effects of hydration on protein-protein interaction &nbsp; <span class="badge badge-info">Secondary focus</span></li>
-                        <li class="list-group-item">Enhanced molecular dynamics (MD) sampling &nbsp; <span class="badge badge-success">Methods</span></li>
-                        <li class="list-group-item">Machine learning applications in MD &nbsp; <span class="badge badge-success">Methods</span></li>
-                    </ul>
-                </div>
-            </div>
-            <br>
-
-            <div class="row">
-                <div class="card" style="width:100%">
-                    <div class="card-header">
-                        <b>Software I've written for my research</b>
-                    </div>
-                    <div class="card-body" id="wham">
-                        <img src="wham.jpg" class="rounded float-right" style="height: 120px; width: auto">
-                        <h5 class="card-title">WHAM</h5>
-                        <p class="card-text">Package for computing free energy profiles from multi-state MD data using the (binned) weighted histogram
-                            analysis method (WHAM) and the (binless) multistate Bennett acceptance ratio (MBAR) method.</p>
-                            <a href="https://github.com/apallath/WHAM" target="_blank" class="btn btn-info">
-                                <i class="fab fa-github"></i> Source
-                            </a>
-                            <a href="#" target="_blank" class="btn btn-primary disabled">
-                                Documentation (Coming soon)
-                            </a>
-                    </div>
-                    <div class="card-body" id="indusanalysis">
-                        <img src="indusanalysis.jpg" class="rounded float-right" style="height: 120px; width: auto">
-                        <h5 class="card-title">INDUSAnalysis</h5>
-                        <p class="card-text">Package for computing and analyzing various order parameters from solvated protein simulation data generated using the in-house implementation of dynamic INDUS in GROMACS.</p>
-                        <a href="#" target="_blank" class="btn btn-info disabled">
-                            <i class="fab fa-github"></i> Source (Private)
-                        </a>
-                        <a href="#" target="_blank" class="btn btn-primary disabled">
-                            Documentation (Coming soon)
-                        </a>
-                    </div>
-                </div>
-                </div>
-                <!-- /.row -->
-                <br>
-                <div class="row">
-                    <div class="card" style="width:100%">
-                        <div class="card-header">
-                            <b>Other stuff I've written</b>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Teaching resources</h5>
-                            <a class="btn btn-outline-info" href="teaching_resources.html">View all >></a>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Miscellaneous software/projects</h5>
-                            <a class="btn btn-outline-info" href="misc_projects.html">View all >></a>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Non-academic articles</h5>
-                            <div class="list-group" style="width:100%">
-                                <a href="https://www.fairobserver.com/region/central_south_asia/indian-education-system-iit-india-south-asian-world-news-today-38966/" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
-                                    <div class="d-flex w-100 justify-content-between">
-                                        <h5 class="mb-1">Without Fundamental Reforms to the Education System, Indians Will Not Innovate</h5>
-                                        <small class="text-muted">Jun 03, 2019</small>
-                                    </div>
-                                    <p class="mb-1">Akash Pallath, Ansh Joshi, and Deepak Dhariwal</p>
-                                    <small class="text-muted">Read on Fair Observer >></small>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <br>
             </div>
         </div>
-        <!-- /.row -->
+        <br>
+        <div class="row">
+            <div class="card" style="width:100%">
+                <div class="card-header">
+                    <b>Articles</b>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">General / Policy</h5>
+                    <div class="list-group" style="width:100%">
+                        <a href="https://www.fairobserver.com/region/central_south_asia/indian-education-system-iit-india-south-asian-world-news-today-38966/" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Without Fundamental Reforms to the Education System, Indians Will Not Innovate</h5>
+                                <small class="text-muted">Jun 03, 2019</small>
+                            </div>
+                            <p class="mb-1">Akash Pallath, Ansh Joshi, and Deepak Dhariwal</p>
+                            <small class="text-muted">Read on Fair Observer >></small>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
     </div>
+</div>
+<!-- /.row -->
+</div>
 
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
-        <div class="container m-6 text-white">
-            <div class="row">
-                <div class="col-sm-6">
-                    <h5 class="titlefont">Akash Pallath &nbsp;
-                        <a href="https://www.linkedin.com/in/akash-pallath/" target="_"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/apallath" target="_"><i class="fab fa-github"></i></a>
-                        <a href="https://twitter.com/PallathAkash" target="_"><i class="fab fa-twitter"></i></a>
-                    </h5>
-                    PhD student, Chemical and Biomolecular Engineering,
-                    <br>
-                    535 Penn Institute for Computational Science,
-                    <br>
-                    University of Pennsylvania,
-                    <br>
-                    3401 Walnut St, Philadelphia, PA - 19104
-                    <br><br>
-                    <a class="btn btn-outline-light" href="mailto:apallath@seas.upenn.edu">Email: apallath@seas.upenn.edu</a>
-                    <br>
-                </div>
-                <div class="col-sm-6 text-right">
-                    <a href="https://upenn.edu" target="_"><img src="penn.png" height="50" style="margin:10px"></a>
-                    <a href="https://seas.upenn.edu" target="_"><img height="50" src="https://www.seas.upenn.edu/wp-content/uploads/2017/08/penn_logo.png" style="margin:10px"></a>
-
-                </div>
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+    <div class="container m-6 text-white">
+        <div class="row">
+            <div class="col-12 col-md">
+                <h5 class="titlefont">Akash Pallath &nbsp;
+                    <a style="color:#cfd0d2" href="https://www.linkedin.com/in/akash-pallath/" target="_"><i class="fab fa-linkedin"></i></a>
+                    <a style="color:#cfd0d2" href="https://github.com/apallath" target="_"><i class="fab fa-github"></i></a>
+                    <a style="color:#cfd0d2" href="https://twitter.com/PallathAkash" target="_"><i class="fab fa-twitter"></i></a>
+                </h5>
+                535, Penn Institute for Computational Science,
+                <br>
+                University of Pennsylvania
+                <br>
+                3401 Walnut St, Philadelphia, PA - 19104, USA
+                <br><br>
+                <a class="btn btn-outline-light" href="mailto:apallath@seas.upenn.edu"><i class="fa fa-envelope"></i>&nbsp; apallath@seas.upenn.edu</a>
+                <br><br>
+            </div>
+            <div class="col-6 col-md">
+                <h5 class="titlefont">External Links</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary" style="color:#cfd0d2" href="https://patelgroup.seas.upenn.edu" target="_blank">Patel Research Group</a></li>
+                    <li><a class="link-secondary" style="color:#cfd0d2" href="https://pics.upenn.edu" target="_blank">Penn Institute for Computational Science</a></li>
+                    <li><a class="link-secondary" style="color:#cfd0d2" href="https://seas.upenn.edu" target="_blank">Penn Engineering</a></li>
+                    <li><a class="link-secondary" style="color:#cfd0d2" href="https://upenn.edu" target="_blank">University of Pennsylvania</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5 class="titlefont">Site Navigation</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary" style="color:#cfd0d2" href="index.html">Home</a></li>
+                    <li><a class="link-secondary" style="color:#cfd0d2" href="projects.html">Projects</a></li>
+                    <li><a class="link-secondary" style="color:#cfd0d2" href="resources.html">Resources</a></li>
+                </ul>
             </div>
         </div>
-    </footer>
+        <hr class="featurette-divider">
+        <small class="float-right"><a style="color:#cfd0d2" href="#">Back to top</a></small>
+        <small style="color:#cfd0d2">&copy; 2020, Akash Pallath</small>
+    </div>
+</footer>
 </body>
 
 <!-- JS, Popper.js, and jQuery -->
@@ -273,18 +284,68 @@
 <script src="js/parallax.js-1.5.0/parallax.js"></script>
 
 <script>
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i <ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+function setCookie(cname, cvalue, exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  var expires = "expires="+ d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+</script>
+
+<script>
 var themes = {
     "default": "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css",
     "darkly" : "https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/darkly/bootstrap.min.css",
 }
 
 $(function(){
-    var themesheet = $('<link href="'+themes['default']+'" rel="stylesheet" />');
-    themesheet.appendTo('head');
+    var themeid = getCookie("theme");
+    if (themeid == "") {
+        var themesheet = $('<link href="'+themes['default']+'" rel="stylesheet" />');
+        themesheet.appendTo('head');
+        setCookie("theme", 'default', 365)
+    }
+    else{
+        var themesheet = $('<link href="'+themes[themeid]+'" rel="stylesheet" />');
+        themesheet.appendTo('head');
+
+        if (themeid == "default") {
+            $("#darktheme").removeClass("active");
+            $("#lighttheme").addClass("active");
+        }
+        if (themeid == "darkly") {
+            $("#lighttheme").removeClass("active");
+            $("#darktheme").addClass("active");
+        }
+    }
     $('.theme-link').click(function(){
+        //toggle
         $(".theme-link.active").removeClass("active");
         $(this).addClass("active")
-        var themeurl = themes[$(this).attr('data-theme')];
+
+        //get theme id of selected toggle button
+        var newthemeid = $(this).attr('data-theme');
+        //set cookie
+        setCookie("theme", newthemeid, 365)
+        //get theme url
+        var themeurl = themes[newthemeid];
+        //set theme
         themesheet.attr('href', themeurl);
     });
 });
