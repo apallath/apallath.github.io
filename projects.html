@@ -53,7 +53,7 @@
                         <a class="nav-link" href="resources.html">Resources</a>
                     </li>
                     <li class="nav-item">
-                        <button href="#" class="btn btn-outline-info disabled" type="button">Blog</button>
+                        <a href="https://apallath.github.io/blog" class="btn btn-outline-info">Blog</a>
                     </li>
                 </ul>
 
@@ -96,12 +96,12 @@
     <div class="container">
         <noscript>
             <div class="alert alert-danger center" style="width:100%;" role="alert">
-              <h4 class="alert-heading">No Javascript!</h4>
-              Your browser has disabled Javascript. Some features of this website will not work without Javascript.
+                <h4 class="alert-heading">No Javascript!</h4>
+                Your browser has disabled Javascript. Some features of this website will not work without Javascript.
             </div>
         </noscript>
         <div class="row">
-            <div class="card" style="width:100%">
+            <div class="card shadow" style="width:100%">
                 <div class="card-header">
                     <b>Research software</b>
                 </div>
@@ -141,7 +141,7 @@
         </div>
         <br>
         <div class="row">
-            <div class="card" style="width:100%">
+            <div class="card shadow" style="width:100%">
                 <div class="card-header">
                     <b>Scalable parallel software</b>
                 </div>
@@ -153,9 +153,19 @@
                                 <small class="text-muted"><i class="fab fa-github"></i>/apallath</small>
                             </div>
                             <p class="mb-1">
-                                Scalable implementation of Conway's Game of Life on a 2D parallel grid using OpenMP (MPI implementation coming soon).
+                                Scalable implementation of Conway's Game of Life on a 2D parallel grid using OpenMP.
                             </p>
                             <span class="badge badge-danger">C++</span> <span class="badge badge-info">OpenMP</span> &nbsp; <small class="text-muted float-right">View on <i class="fab fa-github"></i> >></small>
+                        </a>
+                        <a href="https://github.com/apallath/parallel_algos" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Implementation of parallel algorithms</h5>
+                                <small class="text-muted"><i class="fab fa-github"></i>/apallath</small>
+                            </div>
+                            <p class="mb-1">
+                                Implementation of assorted shared memory and distributed memory parallel algorithms using OpenMP and MPI in C.
+                            </p>
+                            <span class="badge badge-danger">C</span> <span class="badge badge-info">OpenMP</span> <span class="badge badge-info">MPI</span>&nbsp; <small class="text-muted float-right">View on <i class="fab fa-github"></i> >></small>
                         </a>
                     </div>
                 </div>
@@ -165,12 +175,31 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="row">
-                    <div class="card" style="width:100%">
+                    <div class="card shadow" style="width:100%">
                         <div class="card-header">
                             <b>Other software projects</b>
                         </div>
                         <div class="card-body">
                             <div class="list-group" style="width:100%">
+                                <a href="https://github.com/apallath/deep_learning" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Deep learning models</h5>
+                                        <small class="text-muted"><i class="fab fa-github"></i>/apallath</small>
+                                    </div>
+                                    <p class="mb-1">PyTorch code for FC-NN for regression and classification, physics-informed NN for solving PDEs,
+                                        CNN for cell image classification, RNN and LSTM for solving Lotka-Volterra coupled DEs, and autoencoder
+                                        for MNIST image regeneration.</p>
+                                    <span class="badge badge-primary">Python</span> <span class="badge badge-success">ML</span>&nbsp; <small class="text-muted float-right">View on <i class="fab fa-github"></i> >></small>
+                                </a>
+                                <a href="https://github.com/apallath/autoencoders_project" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Implementation of an autoencoder-based CV-discovery and enhanced sampling algorithm</h5>
+                                        <small class="text-muted"><i class="fab fa-github"></i>/apallath and <i class="fab fa-github"></i>/kevinjuan25</small>
+                                    </div>
+                                    <p class="mb-1">Implementation of the MESA algorithm described in Chen and Ferguson, 2018 (10.1002/jcc.25520) using PyTorch
+                                        and the Python interface to OpenMM.</p>
+                                    <span class="badge badge-primary">Python</span> <span class="badge badge-success">ML</span>&nbsp; <small class="text-muted float-right">View on <i class="fab fa-github"></i> >></small>
+                                </a>
                                 <a href="https://github.com/apallath/crossref_miner" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
                                     <div class="d-flex w-100 justify-content-between">
                                         <h5 class="mb-1">Library and scripts to mine CrossRef for citations.</h5>
@@ -178,245 +207,225 @@
                                     </div>
                                     <p class="mb-1">Extensible Python library and scripts to mine CrossRef for citations, using its
                                         REST API. Useful for meta-analysis researchers to automate the process of hand-search.</p>
-                                        <span class="badge badge-primary">Python</span> &nbsp; <small class="text-muted float-right">View on <i class="fab fa-github"></i> >></small>
-                                    </a>
-                                    <a href="https://github.com/apallath/deep_learning" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
-                                        <div class="d-flex w-100 justify-content-between">
-                                            <h5 class="mb-1">Basic deep learning models</h5>
-                                            <small class="text-muted"><i class="fab fa-github"></i>/apallath</small>
-                                        </div>
-                                        <p class="mb-1">PyTorch code for FC-NN for regression and classification, physics-informed NN for solving PDEs,
-                                            CNN for cell image classification, RNN and LSTM for solving Lotka-Volterra coupled DEs, and autoencoder
-                                            for MNIST image regeneration.</p>
-                                            <span class="badge badge-primary">Python</span> <span class="badge badge-success">ML</span>&nbsp; <small class="text-muted float-right">View on <i class="fab fa-github"></i> >></small>
-                                        </a>
-                                        <a href="https://github.com/apallath/autoencoders_project" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
-                                            <div class="d-flex w-100 justify-content-between">
-                                                <h5 class="mb-1">Implementation of an autoencoder-based CV-discovery and enhanced sampling algorithm</h5>
-                                                <small class="text-muted"><i class="fab fa-github"></i>/apallath and <i class="fab fa-github"></i>/kevinjuan25</small>
-                                            </div>
-                                            <p class="mb-1">Implementation of the MESA algorithm described in Chen and Ferguson, 2018 (10.1002/jcc.25520) using PyTorch
-                                                and the Python interface to OpenMM.</p>
-                                                <span class="badge badge-primary">Python</span> <span class="badge badge-success">ML</span>&nbsp; <small class="text-muted float-right">View on <i class="fab fa-github"></i> >></small>
-                                            </a>
-                                            <a href="https://github.com/apallath/multiagent_timetable_scheduling" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
-                                                <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1">Multiagent timetable scheduling</h5>
-                                                    <small class="text-muted"><i class="fab fa-github"></i>/apallath</small>
-                                                </div>
-                                                <p class="mb-1">Implementation of a multi-agent based algorithm for solving a simplified version of the University Timetabling Problem, using simulated annealing, in NetLogo.</p>
-                                                <span class="badge badge-info">Netlogo</span> <span class="badge badge-success">Complex Systems</span>&nbsp; <small class="text-muted float-right">View on <i class="fab fa-github"></i> >></small>
-                                            </a>
-                                            <a href="https://github.com/apallath/network_flow" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
-                                                <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1">Network flow</h5>
-                                                    <small class="text-muted"><i class="fab fa-github"></i>/apallath</small>
-                                                </div>
-                                                <p class="mb-1">C++ implementations of the Edmonds-Karp algorithm and the Dinic algorithm for max-flow, the Hopcroft-Karp algorithm for bipartite
-                                                    matching, and the min-cost max-flow algorithm. Solved examples of max-flow/min-cut problems on TopCoder.
-                                                </p>
-                                                <span class="badge badge-danger">C++</span> <span class="badge badge-success">Algorithm Implementation</span>&nbsp; <small class="text-muted float-right">View on <i class="fab fa-github"></i></small>
-                                            </a>
-                                            <a href="https://github.com/apallath/comp" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
-                                                <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1">Programming contest solutions</h5>
-                                                    <small class="text-muted"><i class="fab fa-github"></i>/apallath</small>
-                                                </div>
-                                                <p class="mb-1">Efficient Python and C++ solutions to past programming contest and practice problems from
-                                                    ACM-ICPC, CodeChef, Codeforces, SPOJ and UVa-OJ.
-                                                </p>
-                                                <span class="badge badge-danger">C++</span> <span class="badge badge-success">Algorithm Implementation</span>&nbsp; <small class="text-muted float-right">View on <i class="fab fa-github"></i> >></small>
-                                            </a>
-                                            <a href="https://github.com/apallath/gcmc" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
-                                                <div class="d-flex w-100 justify-content-between">
-                                                    <h5 class="mb-1">Grand canonical Monte Carlo simulation package</h5>
-                                                    <small class="text-muted"><i class="fab fa-github"></i>/apallath</small>
-                                                </div>
-                                                <p class="mb-1">Extensible C++ package for efficient MC simulations in the Grand Canonical ensemble.</p>
-                                                <span class="badge badge-danger">C++</span>&nbsp; <small class="text-muted float-right">View on <i class="fab fa-github"></i> >></small>
-                                            </a>
-                                        </div>
+                                    <span class="badge badge-primary">Python</span> &nbsp; <small class="text-muted float-right">View on <i class="fab fa-github"></i> >></small>
+                                </a>
+                                <a href="https://github.com/apallath/multiagent_timetable_scheduling" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Multiagent timetable scheduling</h5>
+                                        <small class="text-muted"><i class="fab fa-github"></i>/apallath</small>
                                     </div>
-                                </div>
+                                    <p class="mb-1">Implementation of a multi-agent based algorithm for solving a simplified version of the University Timetabling Problem, using simulated annealing, in NetLogo.</p>
+                                    <span class="badge badge-info">Netlogo</span> <span class="badge badge-success">Complex Systems</span>&nbsp; <small class="text-muted float-right">View on <i class="fab fa-github"></i> >></small>
+                                </a>
+                                <a href="https://github.com/apallath/network_flow" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Network flow</h5>
+                                        <small class="text-muted"><i class="fab fa-github"></i>/apallath</small>
+                                    </div>
+                                    <p class="mb-1">C++ implementations of the Edmonds-Karp algorithm and the Dinic algorithm for max-flow, the Hopcroft-Karp algorithm for bipartite
+                                        matching, and the min-cost max-flow algorithm. Solved examples of max-flow/min-cut problems on TopCoder.
+                                    </p>
+                                    <span class="badge badge-danger">C++</span> <span class="badge badge-success">Algorithm Implementation</span>&nbsp; <small class="text-muted float-right">View on <i class="fab fa-github"></i></small>
+                                </a>
+                                <a href="https://github.com/apallath/comp" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Programming contest solutions</h5>
+                                        <small class="text-muted"><i class="fab fa-github"></i>/apallath</small>
+                                    </div>
+                                    <p class="mb-1">Efficient Python and C++ solutions to past programming contest and practice problems from
+                                        ACM-ICPC, CodeChef, Codeforces, SPOJ and UVa-OJ.
+                                    </p>
+                                    <span class="badge badge-danger">C++</span> <span class="badge badge-success">Algorithm Implementation</span>&nbsp; <small class="text-muted float-right">View on <i class="fab fa-github"></i> >></small>
+                                </a>
+                                <a href="https://github.com/apallath/gcmc" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Grand canonical Monte Carlo simulation package</h5>
+                                        <small class="text-muted"><i class="fab fa-github"></i>/apallath</small>
+                                    </div>
+                                    <p class="mb-1">Extensible C++ package for efficient MC simulations in the Grand Canonical ensemble.</p>
+                                    <span class="badge badge-danger">C++</span>&nbsp; <small class="text-muted float-right">View on <i class="fab fa-github"></i> >></small>
+                                </a>
                             </div>
-                            <br><br>
-                            <div class="row">
-                                <div class="card" style="width:100%">
-                                    <div class="card-header">
-                                        <b>Websites I've developed</b>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-deck">
-                                            <div class="card">
-                                                <img class="card-img-top" src="patelgroup-site.jpg">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Patel Group</h5>
-                                                    <p class="card-text">Website for the Patel Research Group at the University of Pennsylvania.</p>
-                                                    <p class="card-text"><small class="text-muted">HTML/CSS/JS, Bootstrap</small></p>
-                                                </div>
-                                                <div class="card-footer">
-                                                    <a class="btn btn-outline-info" target="_blank" href="http://patelgroup.seas.upenn.edu">View >></a>
-                                                </div>
-                                            </div>
-                                            <div class="card">
-                                                <img class="card-img-top" src="sac-site.jpg">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Student Academic Council</h5>
-                                                    <p class="card-text">Website for IIT Gandhinagar's Student Academic Council</p>
-
-                                                    <p class="card-text"><small class="text-muted">HTML/CSS/JS, Bootstrap, PHP+CMS</small></p>
-                                                </div>
-                                                <div class="card-footer">
-                                                    <a class="btn btn-outline-info" target="_blank" href="http://students.iitgn.ac.in/student-acad-council">View >></a>
-                                                </div>
-                                            </div>
-                                            <div class="card">
-                                                <img class="card-img-top" src="aml-site.jpg">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Amalthea</h5>
-                                                    <p class="card-text">Website for IIT Gandhinagar's annual student-run technical summit.</p>
-                                                    <p class="card-text"><small class="text-muted">HTML/CSS/JS, Semantic UI, PHP</small></p>
-                                                </div>
-                                                <div class="card-footer">
-                                                    Deprecated. Pre-release version available <a target="_blank" href="http://apallath.github.io/Amalthea16">here</a>.
-                                                </div>
-                                            </div>
-
-                                            <div class="card">
-                                                <img class="card-img-top" src="ec-site.jpg">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Student Election Commission Nominations Portal</h5>
-                                                    <p class="card-text">Nominations portal for IIT Gandhinagar's Student Election Commission</p>
-
-                                                    <p class="card-text"><small class="text-muted">HTML/CSS/JS, Materialize, Django, Apache Server, RedHat OpenShift Container Platform</small></p>
-                                                </div>
-                                                <div class="card-footer">
-                                                    Deprecated.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <br>
-                            <br>
                         </div>
                     </div>
-                    <!-- /.row -->
                 </div>
+                <br>
+                <div class="row">
+                    <div class="card shadow" style="width:100%">
+                        <div class="card-header">
+                            <b>Websites I've developed</b>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-deck">
+                                <div class="card">
+                                    <img class="card-img-top" src="patelgroup-site.jpg">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Patel Group</h5>
+                                        <p class="card-text">Website for the Patel Research Group at the University of Pennsylvania.</p>
+                                        <p class="card-text"><small class="text-muted">HTML/CSS/JS, Bootstrap</small></p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a class="btn btn-outline-info" target="_blank" href="http://patelgroup.seas.upenn.edu">View >></a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="sac-site.jpg">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Student Academic Council</h5>
+                                        <p class="card-text">Website for IIT Gandhinagar's Student Academic Council</p>
 
-                <!-- Footer -->
-                <footer class="py-5 bg-dark">
-                    <div class="container m-6 text-white">
-                        <div class="row">
-                            <div class="col-12 col-md">
-                                <h5 class="titlefont">Akash Pallath &nbsp;
-                                    <a style="color:#cfd0d2" href="https://www.linkedin.com/in/akash-pallath/" target="_"><i class="fab fa-linkedin"></i></a>
-                                    <a style="color:#cfd0d2" href="https://github.com/apallath" target="_"><i class="fab fa-github"></i></a>
-                                    <a style="color:#cfd0d2" href="https://twitter.com/PallathAkash" target="_"><i class="fab fa-twitter"></i></a>
-                                </h5>
-                                535, Penn Institute for Computational Science,
-                                <br>
-                                University of Pennsylvania
-                                <br>
-                                3401 Walnut St, Philadelphia, PA - 19104, USA
-                                <br><br>
-                                <a class="btn btn-outline-light" href="mailto:apallath@seas.upenn.edu"><i class="fa fa-envelope"></i>&nbsp; apallath@seas.upenn.edu</a>
-                                <br><br>
-                            </div>
-                            <div class="col-6 col-md">
-                                <h5 class="titlefont">External Links</h5>
-                                <ul class="list-unstyled text-small">
-                                    <li><a class="link-secondary" style="color:#cfd0d2" href="http://patelgroup.seas.upenn.edu" target="_blank">Patel Research Group</a></li>
-                                    <li><a class="link-secondary" style="color:#cfd0d2" href="https://pics.upenn.edu" target="_blank">Penn Institute for Computational Science</a></li>
-                                    <li><a class="link-secondary" style="color:#cfd0d2" href="https://web.sas.upenn.edu/slm" target="_blank">Penn Center for Soft and Living Matter</a></li>
-                                    <li><a class="link-secondary" style="color:#cfd0d2" href="https://seas.upenn.edu" target="_blank">Penn Engineering</a></li>
-                                    <li><a class="link-secondary" style="color:#cfd0d2" href="https://upenn.edu" target="_blank">University of Pennsylvania</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-6 col-md">
-                                <h5 class="titlefont">Site Navigation</h5>
-                                <ul class="list-unstyled text-small">
-                                    <li><a class="link-secondary" style="color:#cfd0d2" href="index.html">Home</a></li>
-                                    <li><a class="link-secondary" style="color:#cfd0d2" href="projects.html">Projects</a></li>
-                                    <li><a class="link-secondary" style="color:#cfd0d2" href="resources.html">Resources</a></li>
-                                    <li><a class="link-secondary" style="color:#cfd0d2" href="#">Blog</a></li>
-                                </ul>
+                                        <p class="card-text"><small class="text-muted">HTML/CSS/JS, Bootstrap, PHP+CMS</small></p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a class="btn btn-outline-info" target="_blank" href="http://students.iitgn.ac.in/student-acad-council">View >></a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="aml-site.jpg">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Amalthea</h5>
+                                        <p class="card-text">Website for IIT Gandhinagar's annual student-run technical summit.</p>
+                                        <p class="card-text"><small class="text-muted">HTML/CSS/JS, Semantic UI, PHP</small></p>
+                                    </div>
+                                    <div class="card-footer">
+                                        Deprecated. Pre-release version available <a target="_blank" href="http://apallath.github.io/Amalthea16">here</a>.
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <img class="card-img-top" src="ec-site.jpg">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Student Election Commission Nominations Portal</h5>
+                                        <p class="card-text">Nominations portal for IIT Gandhinagar's Student Election Commission</p>
+
+                                        <p class="card-text"><small class="text-muted">HTML/CSS/JS, Materialize, Django, Apache Server, RedHat OpenShift Container Platform</small></p>
+                                    </div>
+                                    <div class="card-footer">
+                                        Deprecated.
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <hr class="featurette-divider">
-                        <small class="float-right"><a style="color:#cfd0d2" href="#">Back to top</a></small>
-                        <small style="color:#cfd0d2">&copy; 2021, Akash Pallath</small>
                     </div>
-                </footer>
-            </body>
+                </div>
+                <br>
+                <br>
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
 
-            <script>
-            function getCookie(cname) {
-                var name = cname + "=";
-                var decodedCookie = decodeURIComponent(document.cookie);
-                var ca = decodedCookie.split(';');
-                for(var i = 0; i <ca.length; i++) {
-                    var c = ca[i];
-                    while (c.charAt(0) == ' ') {
-                        c = c.substring(1);
-                    }
-                    if (c.indexOf(name) == 0) {
-                        return c.substring(name.length, c.length);
-                    }
-                }
-                return "";
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container m-6 text-white">
+            <div class="row">
+                <div class="col-12 col-md">
+                    <h5 class="titlefont">Akash Pallath &nbsp;
+                        <a style="color:#cfd0d2" href="https://www.linkedin.com/in/akash-pallath/" target="_"><i class="fab fa-linkedin"></i></a>
+                        <a style="color:#cfd0d2" href="https://github.com/apallath" target="_"><i class="fab fa-github"></i></a>
+                        <a style="color:#cfd0d2" href="https://twitter.com/PallathAkash" target="_"><i class="fab fa-twitter"></i></a>
+                    </h5>
+                    535, Penn Institute for Computational Science,
+                    <br>
+                    University of Pennsylvania
+                    <br>
+                    3401 Walnut St, Philadelphia, PA - 19104, USA
+                    <br><br>
+                    <a class="btn btn-outline-light" href="mailto:apallath@seas.upenn.edu"><i class="fa fa-envelope"></i>&nbsp; apallath@seas.upenn.edu</a>
+                    <br><br>
+                </div>
+                <div class="col-6 col-md">
+                    <h5 class="titlefont">External Links</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="link-secondary" style="color:#cfd0d2" href="http://patelgroup.seas.upenn.edu" target="_blank">Patel Research Group</a></li>
+                        <li><a class="link-secondary" style="color:#cfd0d2" href="https://pics.upenn.edu" target="_blank">Penn Institute for Computational Science</a></li>
+                        <li><a class="link-secondary" style="color:#cfd0d2" href="https://web.sas.upenn.edu/slm" target="_blank">Penn Center for Soft and Living Matter</a></li>
+                        <li><a class="link-secondary" style="color:#cfd0d2" href="https://seas.upenn.edu" target="_blank">Penn Engineering</a></li>
+                        <li><a class="link-secondary" style="color:#cfd0d2" href="https://upenn.edu" target="_blank">University of Pennsylvania</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5 class="titlefont">Site Navigation</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="link-secondary" style="color:#cfd0d2" href="index.html">Home</a></li>
+                        <li><a class="link-secondary" style="color:#cfd0d2" href="projects.html">Projects</a></li>
+                        <li><a class="link-secondary" style="color:#cfd0d2" href="resources.html">Resources</a></li>
+                        <li><a class="link-secondary" style="color:#cfd0d2" href="https://apallath.github.io/blog">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="featurette-divider">
+            <small class="float-right"><a style="color:#cfd0d2" href="#">Back to top</a></small>
+            <small style="color:#cfd0d2">&copy; 2021, Akash Pallath</small>
+        </div>
+    </footer>
+</body>
+
+<script>
+    function getCookie(cname) {
+        var name = cname + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
             }
-
-            function setCookie(cname, cvalue, exdays) {
-                var d = new Date();
-                d.setTime(d.getTime() + (exdays*24*60*60*1000));
-                var expires = "expires="+ d.toUTCString();
-                document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
             }
-        </script>
-
-        <script>
-        var themes = {
-            "default": "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css",
-            "darkly" : "https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/darkly/bootstrap.min.css",
         }
+        return "";
+    }
 
-        $(function(){
-            var themeid = getCookie("theme");
-            if (themeid == "") {
-                var themesheet = $('<link href="'+themes['default']+'" rel="stylesheet" />');
-                themesheet.appendTo('head');
-                setCookie("theme", 'default', 365)
+    function setCookie(cname, cvalue, exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+        var expires = "expires=" + d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+</script>
+
+<script>
+    var themes = {
+        "default": "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css",
+        "darkly": "https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/darkly/bootstrap.min.css",
+    }
+
+    $(function() {
+        var themeid = getCookie("theme");
+        if (themeid == "") {
+            var themesheet = $('<link href="' + themes['default'] + '" rel="stylesheet" />');
+            themesheet.appendTo('head');
+            setCookie("theme", 'default', 365)
+        } else {
+            var themesheet = $('<link href="' + themes[themeid] + '" rel="stylesheet" />');
+            themesheet.appendTo('head');
+
+            if (themeid == "default") {
+                $("#darktheme").removeClass("active");
+                $("#lighttheme").addClass("active");
             }
-            else{
-                var themesheet = $('<link href="'+themes[themeid]+'" rel="stylesheet" />');
-                themesheet.appendTo('head');
-
-                if (themeid == "default") {
-                    $("#darktheme").removeClass("active");
-                    $("#lighttheme").addClass("active");
-                }
-                if (themeid == "darkly") {
-                    $("#lighttheme").removeClass("active");
-                    $("#darktheme").addClass("active");
-                }
+            if (themeid == "darkly") {
+                $("#lighttheme").removeClass("active");
+                $("#darktheme").addClass("active");
             }
-            $('.theme-link').click(function(){
-                //toggle
-                $(".theme-link.active").removeClass("active");
-                $(this).addClass("active")
+        }
+        $('.theme-link').click(function() {
+            //toggle
+            $(".theme-link.active").removeClass("active");
+            $(this).addClass("active")
 
-                //get theme id of selected toggle button
-                var newthemeid = $(this).attr('data-theme');
-                //set cookie
-                setCookie("theme", newthemeid, 365)
-                //get theme url
-                var themeurl = themes[newthemeid];
-                //set theme
-                themesheet.attr('href', themeurl);
-            });
+            //get theme id of selected toggle button
+            var newthemeid = $(this).attr('data-theme');
+            //set cookie
+            setCookie("theme", newthemeid, 365)
+            //get theme url
+            var themeurl = themes[newthemeid];
+            //set theme
+            themesheet.attr('href', themeurl);
         });
-    </script>
+    });
+</script>
 
-    </html>
+</html>

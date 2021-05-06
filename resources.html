@@ -8,7 +8,7 @@
     <meta name="description" content="Akash Pallath">
     <meta name="author" content="Akash Pallath">
 
-    <title>Teaching Resources | Akash Pallath</title>
+    <title>Resources | Akash Pallath</title>
 
     <!--Boostrap-->
     <!-- CSS only -->
@@ -53,7 +53,7 @@
                         <a class="nav-link" href="#">Resources</a>
                     </li>
                     <li class="nav-item">
-                        <button href="#" class="btn btn-outline-info disabled" type="button">Blog</button>
+                        <a href="https://apallath.github.io/blog" class="btn btn-outline-info">Blog</a>
                     </li>
                 </ul>
 
@@ -68,11 +68,11 @@
                         <a class="nav-link" href="https://twitter.com/PallathAkash" target="_"><i class="fab fa-twitter"></i></a>
                     </li>
                     <li id="theme-button" class="dropdown">
-                      <button href="#" class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">Mode <b class="caret"></b></button>
-                      <ul class="dropdown-menu ">
-                        <li><a href="#" class="dropdown-item theme-link active" data-theme="default" id="lighttheme">Light</a></li>
-                        <li><a href="#" class="dropdown-item theme-link" data-theme="darkly" id="darktheme">Dark</a></li>
-                      </ul>
+                        <button href="#" class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">Mode <b class="caret"></b></button>
+                        <ul class="dropdown-menu ">
+                            <li><a href="#" class="dropdown-item theme-link active" data-theme="default" id="lighttheme">Light</a></li>
+                            <li><a href="#" class="dropdown-item theme-link" data-theme="darkly" id="darktheme">Dark</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -96,14 +96,14 @@
     <div class="container">
         <noscript>
             <div class="alert alert-danger center" style="width:100%;" role="alert">
-              <h4 class="alert-heading">No Javascript!</h4>
-              Your browser has disabled Javascript. Some features of this website will not work without Javascript.
+                <h4 class="alert-heading">No Javascript!</h4>
+                Your browser has disabled Javascript. Some features of this website will not work without Javascript.
             </div>
         </noscript>
         <div class="row">
             <div class="col-sm-12">
                 <div class="row">
-                    <div class="card" style="width:100%">
+                    <div class="card shadow" style="width:100%">
                         <div class="card-header">
                             <b>Jupyter notebook tutorials</b>
                         </div>
@@ -128,7 +128,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="row">
-                    <div class="card" style="width:100%">
+                    <div class="card shadow" style="width:100%">
                         <div class="card-header">
                             <b>Slides</b>
                         </div>
@@ -140,7 +140,7 @@
                                         <small class="text-muted">PDF</small>
                                     </div>
                                     <p class="mb-1">Slides from my tutorial session on pressure coupling algorithms, with a focus on GROMACS.
-                                    [Patel Group Tutorials, Summer 2020]</p>
+                                        [Patel Group Tutorials, Summer 2020]</p>
                                     <small class="text-muted">View on Google Drive >></small>
                                 </a>
                                 <a href="https://drive.google.com/file/d/1CNxxMroEcyzaD5t19geLu4aIXuRfweNW/view?usp=sharing" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
@@ -149,7 +149,7 @@
                                         <small class="text-muted">PDF</small>
                                     </div>
                                     <p class="mb-1">Slides from my tutorial session on MD integrators, with a focus on GROMACS.
-                                    [Patel Group Tutorials, Summer 2020]</p>
+                                        [Patel Group Tutorials, Summer 2020]</p>
                                     <small class="text-muted">View on Google Drive >></small>
                                 </a>
                                 <a href="https://drive.google.com/file/d/1W6_XZUPmwNSiG1MZzT6rZGhpli9sYBtd/view?usp=sharing" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
@@ -158,7 +158,7 @@
                                         <small class="text-muted">PDF</small>
                                     </div>
                                     <p class="mb-1">Slides from my lecture on writing statements of purpose for
-                                    graduate school. [HS423 Writing Lab, Spring 2019, IIT Gandhinagar]</p>
+                                        graduate school. [HS423 Writing Lab, Spring 2019, IIT Gandhinagar]</p>
                                     <small class="text-muted">View on Google Drive >></small>
                                 </a>
                             </div>
@@ -167,7 +167,7 @@
                 </div>
                 <br><br>
             </div>
-        <!-- /.row -->
+            <!-- /.row -->
         </div>
     </div>
 
@@ -206,7 +206,7 @@
                         <li><a class="link-secondary" style="color:#cfd0d2" href="index.html">Home</a></li>
                         <li><a class="link-secondary" style="color:#cfd0d2" href="projects.html">Projects</a></li>
                         <li><a class="link-secondary" style="color:#cfd0d2" href="resources.html">Resources</a></li>
-                        <li><a class="link-secondary" style="color:#cfd0d2" href="#">Blog</a></li>
+                        <li><a class="link-secondary" style="color:#cfd0d2" href="https://apallath.github.io/blog">Blog</a></li>
                     </ul>
                 </div>
             </div>
@@ -215,48 +215,47 @@
             <small style="color:#cfd0d2">&copy; 2021, Akash Pallath</small>
         </div>
     </footer>
-    </body>
+</body>
 
-    <script>
+<script>
     function getCookie(cname) {
-      var name = cname + "=";
-      var decodedCookie = decodeURIComponent(document.cookie);
-      var ca = decodedCookie.split(';');
-      for(var i = 0; i <ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) == ' ') {
-          c = c.substring(1);
+        var name = cname + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
         }
-        if (c.indexOf(name) == 0) {
-          return c.substring(name.length, c.length);
-        }
-      }
-      return "";
+        return "";
     }
 
     function setCookie(cname, cvalue, exdays) {
-      var d = new Date();
-      d.setTime(d.getTime() + (exdays*24*60*60*1000));
-      var expires = "expires="+ d.toUTCString();
-      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+        var expires = "expires=" + d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
     }
-    </script>
+</script>
 
-    <script>
+<script>
     var themes = {
         "default": "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css",
-        "darkly" : "https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/darkly/bootstrap.min.css",
+        "darkly": "https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/darkly/bootstrap.min.css",
     }
 
-    $(function(){
+    $(function() {
         var themeid = getCookie("theme");
         if (themeid == "") {
-            var themesheet = $('<link href="'+themes['default']+'" rel="stylesheet" />');
+            var themesheet = $('<link href="' + themes['default'] + '" rel="stylesheet" />');
             themesheet.appendTo('head');
             setCookie("theme", 'default', 365)
-        }
-        else{
-            var themesheet = $('<link href="'+themes[themeid]+'" rel="stylesheet" />');
+        } else {
+            var themesheet = $('<link href="' + themes[themeid] + '" rel="stylesheet" />');
             themesheet.appendTo('head');
 
             if (themeid == "default") {
@@ -268,7 +267,7 @@
                 $("#darktheme").addClass("active");
             }
         }
-        $('.theme-link').click(function(){
+        $('.theme-link').click(function() {
             //toggle
             $(".theme-link.active").removeClass("active");
             $(this).addClass("active")
@@ -283,6 +282,6 @@
             themesheet.attr('href', themeurl);
         });
     });
-    </script>
+</script>
 
-    </html>
+</html>

@@ -25,12 +25,14 @@
 
     <!-- Title font -->
     <link href="https://fonts.googleapis.com/css?family=Gentium+Basic&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="jumbotron-grad">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="background: #141E30 !important;">
         <div class="container">
             <a class="navbar-brand" href="#"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,7 +41,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home / About</a>
+                        <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="projects.html">Projects</a>
@@ -48,7 +50,7 @@
                         <a class="nav-link" href="resources.html">Resources</a>
                     </li>
                     <li class="nav-item">
-                        <button href="#" class="btn btn-outline-info disabled" type="button">Blog</button>
+                        <a href="https://apallath.github.io/blog" class="btn btn-outline-info">Blog</a>
                     </li>
                 </ul>
 
@@ -60,13 +62,16 @@
                         <a class="nav-link" href="https://github.com/apallath" target="_"><i class="fab fa-github"></i></a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="https://orcid.org/0000-0001-6628-6388" target="_"><i class="ai ai-orcid"></i></a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="https://twitter.com/PallathAkash" target="_"><i class="fab fa-twitter"></i></a>
                     </li>
                     <li id="theme-button" class="dropdown">
                         <button href="#" class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">Mode <b class="caret"></b></button>
                         <ul class="dropdown-menu ">
-                            <li><a href="#" class="dropdown-item theme-link active" data-theme="default" id="lighttheme">Light</a></li>
-                            <li><a href="#" class="dropdown-item theme-link" data-theme="darkly" id="darktheme">Dark</a></li>
+                            <li><a href="#" class="dropdown-item theme-link active" data-theme="default" id="lighttheme"><i class="fas fa-sun"></i> Light</a></li>
+                            <li><a href="#" class="dropdown-item theme-link" data-theme="darkly" id="darktheme"><i class="fas fa-moon"></i> Dark</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -75,31 +80,36 @@
     </nav>
 
     <!-- Header with Background Image -->
-    <div class="business-header parallax-window" data-parallax="scroll" data-speed="0.5" data-image-src="css/solvated_ubq.jpg">
-        <!-- style="background: url('css/sars_cov_2_rbd_ace.jpg'); position: relative;"-->
+    <!--<div class="business-header parallax-window" data-parallax="scroll" data-speed="0.5" data-image-src="css/solvated_ubq.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12" style="position: absolute; bottom: 0; left: 0;">
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
 
-    <div class="jumbotron bg-dark jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid" style="background: #141E30;  /* fallback for old browsers */
+background: -webkit-linear-gradient(0deg, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(0deg, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-3 text-right">
-                    <img src="akash.jpg" class="rounded-circle" style="height:120px; width:auto; box-shadow: 0px 0px 10px #fff;">
+                <div class="col-sm-5 text-center">
+                    <img src="akash_full.jpg" class="rounded" style="width: 250px; max-width:100%; height:auto; box-shadow: 0px 0px 50px #fff;">
                 </div>
-                <div class="col-sm-9">
-                    <h1 class="display-4 titlefont">Akash Pallath</h1>
+                <div class="col-sm-7" style="padding:4em">
+                    <h1 class="display-3 titlefont">Akash Pallath</h1>
                     <p class="lead">
                         <a href="https://drive.google.com/file/d/1-xLeiddmKd4QOPL5jzBohucKtdkdlG3Y/view?usp=sharing" target="_" class="btn btn-outline-light mb-1"><i class="fas fa-file"></i> CV</a>
                         <a href="https://www.linkedin.com/in/akash-pallath/" target="_" class="btn btn-outline-light mb-1"><i class="fab fa-linkedin"></i> LinkedIn</a>
                         <a href="https://github.com/apallath" target="_" class="btn btn-outline-light mb-1"><i class="fab fa-github"></i> Github</a>
+                        <a href="https://orcid.org/0000-0001-6628-6388" class="btn btn-outline-light mb-1"><i class="ai ai-orcid"></i> ORCID</a>
                         <a href="https://twitter.com/PallathAkash" target="_" class="btn btn-outline-light mb-1"><i class="fab fa-twitter"></i> Twitter</a>
-                        <a href="#" class="btn btn-outline-warning mb-1">Blog</a>
+                        <a href="https://apallath.github.io/blog" class="btn btn-outline-warning mb-1">Blog</a>
                     </p>
+                    <br>
+                    <div class="btn btn-lg disabled btn-block btn-dark element text-left" style="font-family: 'IBM Plex Mono', monospace !important; box-shadow: 0px 0px 10px #fff;">[apallath:~ ]$</div>
                 </div>
             </div>
         </div>
@@ -111,12 +121,12 @@
             <div class="col-sm-12">
                 <noscript>
                     <div class="alert alert-danger center" style="width:100%;" role="alert">
-                      <h4 class="alert-heading">No Javascript!</h4>
-                      Your browser has disabled Javascript. Some features of this website will not work without Javascript.
+                        <h4 class="alert-heading">No Javascript!</h4>
+                        Your browser has disabled Javascript. Some features of this website will not work without Javascript.
                     </div>
                 </noscript>
                 <div class="row">
-                    <div class="card">
+                    <div class="card shadow">
                         <div class="card-header">
                             <b>About me</b>
                         </div>
@@ -128,7 +138,7 @@
                                 I conduct research at the interface of biology, chemistry, and computational science.
                             </p>
                             <p>
-                                I am passionate about using computation to solve challenging problems. My graduate research is
+                                I use computation to solve challenging problems. My graduate research is
                                 focused around studying protein hydration at an atomistic scale using a variety of computational tools.
                                 Prior to starting graduate school, I worked in research labs at
                                 <a href="https://caltech.edu/" target="_blank">Caltech</a>,
@@ -140,11 +150,14 @@
                                 performance benchmarking for density functional theory calculations (in <a href="https://www.jaist.ac.jp/english/areas/ee/laboratory/maezono.html" target="_blank">Dr. Ryo Maezono</a>'s lab at JAIST),
                                 and theoretical computer science research in the field of computational social choice (with <a href="http://neeldhara.com" target="_blank">Dr. Neeldhara Misra</a> at IIT Gandhinagar).
                                 I used computational tools and developed algorithms and frameworks - and in one instance, assembled parallel computing hardware - to solve these problems.
-                            </p><p>
+                            </p>
+                            <p>
                                 I was also a competitive programmer, and participated
                                 in the <a href="https://icpc.global" target="_">ACM-ICPC</a> India Regionals in 2017.
                             </p>
                             <p>Click <a href="https://drive.google.com/file/d/1-xLeiddmKd4QOPL5jzBohucKtdkdlG3Y/view?usp=sharing" target="_">here</a> for a copy of my CV.</p>
+                            <p><b>Getting in touch</b></p>
+                            <p>Email is the best way to get in touch with me. You can reach me at <a href="mailto:apallath@seas.upenn.edu">apallath@seas.upenn.edu</a>.</p>
                         </div>
                     </div>
                 </div>
@@ -152,7 +165,7 @@
         </div>
         <br>
         <div class="row">
-            <div class="card" style="width:100%">
+            <div class="card shadow" style="width:100%">
                 <div class="card-header">
                     <b>Research interests</b>
                 </div>
@@ -167,7 +180,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="row">
-                    <div class="card">
+                    <div class="card shadow">
                         <div class="card-header">
                             <b>Research overview</b>
                         </div>
@@ -197,7 +210,7 @@
         </div>
         <br>
         <div class="row">
-            <div class="card" style="width:100%">
+            <div class="card shadow" style="width:100%">
                 <div class="card-header">
                     <b>Teaching @ Penn</b>
                 </div>
@@ -208,14 +221,15 @@
         </div>
         <br>
         <div class="row">
-            <div class="card" style="width:100%">
+            <div class="card shadow" style="width:100%">
                 <div class="card-header">
                     <b>Articles</b>
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">General / Policy</h5>
                     <div class="list-group" style="width:100%">
-                        <a href="https://www.fairobserver.com/region/central_south_asia/indian-education-system-iit-india-south-asian-world-news-today-38966/" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <a href="https://www.fairobserver.com/region/central_south_asia/indian-education-system-iit-india-south-asian-world-news-today-38966/" target="_blank"
+                            class="list-group-item list-group-item-action flex-column align-items-start">
                             <div class="d-flex w-100 justify-content-between">
                                 <h5 class="mb-1">Without Fundamental Reforms to the Education System, Indians Will Not Innovate</h5>
                                 <small class="text-muted">Jun 03, 2019</small>
@@ -230,54 +244,51 @@
         <br>
         <br>
     </div>
-</div>
-<!-- /.row -->
-</div>
 
-<!-- Footer -->
-<footer class="py-5 bg-dark">
-    <div class="container m-6 text-white">
-        <div class="row">
-            <div class="col-12 col-md">
-                <h5 class="titlefont">Akash Pallath &nbsp;
-                    <a style="color:#cfd0d2" href="https://www.linkedin.com/in/akash-pallath/" target="_"><i class="fab fa-linkedin"></i></a>
-                    <a style="color:#cfd0d2" href="https://github.com/apallath" target="_"><i class="fab fa-github"></i></a>
-                    <a style="color:#cfd0d2" href="https://twitter.com/PallathAkash" target="_"><i class="fab fa-twitter"></i></a>
-                </h5>
-                535, Penn Institute for Computational Science,
-                <br>
-                University of Pennsylvania
-                <br>
-                3401 Walnut St, Philadelphia, PA - 19104, USA
-                <br><br>
-                <a class="btn btn-outline-light" href="mailto:apallath@seas.upenn.edu"><i class="fa fa-envelope"></i>&nbsp; apallath@seas.upenn.edu</a>
-                <br><br>
+    <!-- Footer -->
+    <footer class="py-5 bg-dark" style="background: #141E30 !important;">
+        <div class="container m-6 text-white">
+            <div class="row">
+                <div class="col-12 col-md">
+                    <h5 class="titlefont">Akash Pallath &nbsp;
+                        <a style="color:#cfd0d2" href="https://www.linkedin.com/in/akash-pallath/" target="_"><i class="fab fa-linkedin"></i></a>
+                        <a style="color:#cfd0d2" href="https://github.com/apallath" target="_"><i class="fab fa-github"></i></a>
+                        <a style="color:#cfd0d2" href="https://twitter.com/PallathAkash" target="_"><i class="fab fa-twitter"></i></a>
+                    </h5>
+                    535, Penn Institute for Computational Science,
+                    <br>
+                    University of Pennsylvania
+                    <br>
+                    3401 Walnut St, Philadelphia, PA - 19104, USA
+                    <br><br>
+                    <a class="btn btn-outline-light" href="mailto:apallath@seas.upenn.edu"><i class="fa fa-envelope"></i>&nbsp; apallath@seas.upenn.edu</a>
+                    <br><br>
+                </div>
+                <div class="col-6 col-md">
+                    <h5 class="titlefont">External Links</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="link-secondary" style="color:#cfd0d2" href="http://patelgroup.seas.upenn.edu" target="_blank">Patel Research Group</a></li>
+                        <li><a class="link-secondary" style="color:#cfd0d2" href="https://pics.upenn.edu" target="_blank">Penn Institute for Computational Science</a></li>
+                        <li><a class="link-secondary" style="color:#cfd0d2" href="https://web.sas.upenn.edu/slm" target="_blank">Penn Center for Soft and Living Matter</a></li>
+                        <li><a class="link-secondary" style="color:#cfd0d2" href="https://seas.upenn.edu" target="_blank">Penn Engineering</a></li>
+                        <li><a class="link-secondary" style="color:#cfd0d2" href="https://upenn.edu" target="_blank">University of Pennsylvania</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5 class="titlefont">Site Navigation</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="link-secondary" style="color:#cfd0d2" href="index.html">Home</a></li>
+                        <li><a class="link-secondary" style="color:#cfd0d2" href="projects.html">Projects</a></li>
+                        <li><a class="link-secondary" style="color:#cfd0d2" href="resources.html">Resources</a></li>
+                        <li><a class="link-secondary" style="color:#cfd0d2" href="https://apallath.github.io/blog">Blog</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-6 col-md">
-                <h5 class="titlefont">External Links</h5>
-                <ul class="list-unstyled text-small">
-                    <li><a class="link-secondary" style="color:#cfd0d2" href="http://patelgroup.seas.upenn.edu" target="_blank">Patel Research Group</a></li>
-                    <li><a class="link-secondary" style="color:#cfd0d2" href="https://pics.upenn.edu" target="_blank">Penn Institute for Computational Science</a></li>
-                    <li><a class="link-secondary" style="color:#cfd0d2" href="https://web.sas.upenn.edu/slm" target="_blank">Penn Center for Soft and Living Matter</a></li>
-                    <li><a class="link-secondary" style="color:#cfd0d2" href="https://seas.upenn.edu" target="_blank">Penn Engineering</a></li>
-                    <li><a class="link-secondary" style="color:#cfd0d2" href="https://upenn.edu" target="_blank">University of Pennsylvania</a></li>
-                </ul>
-            </div>
-            <div class="col-6 col-md">
-                <h5 class="titlefont">Site Navigation</h5>
-                <ul class="list-unstyled text-small">
-                    <li><a class="link-secondary" style="color:#cfd0d2" href="index.html">Home</a></li>
-                    <li><a class="link-secondary" style="color:#cfd0d2" href="projects.html">Projects</a></li>
-                    <li><a class="link-secondary" style="color:#cfd0d2" href="resources.html">Resources</a></li>
-                    <li><a class="link-secondary" style="color:#cfd0d2" href="#">Blog</a></li>
-                </ul>
-            </div>
+            <hr class="featurette-divider">
+            <small class="float-right"><a style="color:#cfd0d2" href="#">Back to top</a></small>
+            <small style="color:#cfd0d2">&copy; 2021, Akash Pallath</small>
         </div>
-        <hr class="featurette-divider">
-        <small class="float-right"><a style="color:#cfd0d2" href="#">Back to top</a></small>
-        <small style="color:#cfd0d2">&copy; 2021, Akash Pallath</small>
-    </div>
-</footer>
+    </footer>
 </body>
 
 <!-- JS, Popper.js, and jQuery -->
@@ -289,77 +300,93 @@
 <script src="js/parallax.js-1.5.0/parallax.js"></script>
 
 <script>
-function getCookie(cname) {
-  var name = cname + "=";
-  var decodedCookie = decodeURIComponent(document.cookie);
-  var ca = decodedCookie.split(';');
-  for(var i = 0; i <ca.length; i++) {
-    var c = ca[i];
-    while (c.charAt(0) == ' ') {
-      c = c.substring(1);
+    function getCookie(cname) {
+        var name = cname + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
     }
-    if (c.indexOf(name) == 0) {
-      return c.substring(name.length, c.length);
-    }
-  }
-  return "";
-}
 
-function setCookie(cname, cvalue, exdays) {
-  var d = new Date();
-  d.setTime(d.getTime() + (exdays*24*60*60*1000));
-  var expires = "expires="+ d.toUTCString();
-  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
+    function setCookie(cname, cvalue, exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+        var expires = "expires=" + d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
 </script>
 
 <script>
-var themes = {
-    "default": "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css",
-    "darkly" : "https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/darkly/bootstrap.min.css",
-}
-
-$(function(){
-    var themeid = getCookie("theme");
-    if (themeid == "") {
-        var themesheet = $('<link href="'+themes['default']+'" rel="stylesheet" />');
-        themesheet.appendTo('head');
-        setCookie("theme", 'default', 365)
+    var themes = {
+        "default": "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css",
+        "darkly": "https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/darkly/bootstrap.min.css",
     }
-    else{
-        var themesheet = $('<link href="'+themes[themeid]+'" rel="stylesheet" />');
-        themesheet.appendTo('head');
 
-        if (themeid == "default") {
-            $("#darktheme").removeClass("active");
-            $("#lighttheme").addClass("active");
-        }
-        if (themeid == "darkly") {
-            $("#lighttheme").removeClass("active");
-            $("#darktheme").addClass("active");
-        }
-    }
-    $('.theme-link').click(function(){
-        //toggle
-        $(".theme-link.active").removeClass("active");
-        $(this).addClass("active")
+    $(function() {
+        var themeid = getCookie("theme");
+        if (themeid == "") {
+            var themesheet = $('<link href="' + themes['default'] + '" rel="stylesheet" />');
+            themesheet.appendTo('head');
+            setCookie("theme", 'default', 365)
+        } else {
+            var themesheet = $('<link href="' + themes[themeid] + '" rel="stylesheet" />');
+            themesheet.appendTo('head');
 
-        //get theme id of selected toggle button
-        var newthemeid = $(this).attr('data-theme');
-        //set cookie
-        setCookie("theme", newthemeid, 365)
-        //get theme url
-        var themeurl = themes[newthemeid];
-        //set theme
-        themesheet.attr('href', themeurl);
+            if (themeid == "default") {
+                $("#darktheme").removeClass("active");
+                $("#lighttheme").addClass("active");
+            }
+            if (themeid == "darkly") {
+                $("#lighttheme").removeClass("active");
+                $("#darktheme").addClass("active");
+            }
+        }
+        $('.theme-link').click(function() {
+            //toggle
+            $(".theme-link.active").removeClass("active");
+            $(this).addClass("active")
+
+            //get theme id of selected toggle button
+            var newthemeid = $(this).attr('data-theme');
+            //set cookie
+            setCookie("theme", newthemeid, 365)
+            //get theme url
+            var themeurl = themes[newthemeid];
+            //set theme
+            themesheet.attr('href', themeurl);
+        });
     });
+</script>
+
+<script>
+    setTimeout(function() {
+        $(window).trigger('resize').trigger('scroll');
+    }, 1000);
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<script>
+var typed = new Typed('.element', {
+  strings: ["[apallath:~ ]$",
+            "[apallath:~ ]$ Computational science",
+            "[apallath:~ ]$ Molecular modeling and simulation",
+            "[apallath:~ ]$ Molecular biophysics",
+            "[apallath:~ ]$ Data science"],
+  typeSpeed: 30,
+  backDelay: 1500,
+  backSpeed: 0,
+  loop: true,
+  loopCount: Infinity,
+  showCursor: false
 });
 </script>
-
-<script>
-setTimeout(function(){
-    $(window).trigger('resize').trigger('scroll');
-}, 1000);
-</script>
-
 </html>
