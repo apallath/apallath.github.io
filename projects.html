@@ -8,7 +8,7 @@
     <meta name="description" content="Akash Pallath">
     <meta name="author" content="Akash Pallath">
 
-    <title>Projects | Akash Pallath</title>
+    <title>Projects (Code) | Akash Pallath</title>
 
     <!--Boostrap-->
     <!-- CSS only -->
@@ -31,11 +31,13 @@
     <!-- Penn fonts -->
     <link href="https://fonts.googleapis.com/css?family=Gentium+Basic&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css" rel="stylesheet">
 </head>
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="background: #141E30 !important;">
         <div class="container">
             <a class="navbar-brand" href="#"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,10 +46,13 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home / About</a>
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="research.html">Research</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Projects</a>
+                        <a class="nav-link" href="#">Projects (Code)</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="resources.html">Resources</a>
@@ -65,13 +70,16 @@
                         <a class="nav-link" href="https://github.com/apallath" target="_"><i class="fab fa-github"></i></a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="https://orcid.org/0000-0001-6628-6388" target="_"><i class="ai ai-orcid"></i></a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="https://twitter.com/PallathAkash" target="_"><i class="fab fa-twitter"></i></a>
                     </li>
                     <li id="theme-button" class="dropdown">
                         <button href="#" class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">Mode <b class="caret"></b></button>
                         <ul class="dropdown-menu ">
-                            <li><a href="#" class="dropdown-item theme-link active" data-theme="default" id="lighttheme">Light</a></li>
-                            <li><a href="#" class="dropdown-item theme-link" data-theme="darkly" id="darktheme">Dark</a></li>
+                            <li><a href="#" class="dropdown-item theme-link active" data-theme="default" id="lighttheme"><i class="fas fa-sun"></i> Light</a></li>
+                            <li><a href="#" class="dropdown-item theme-link" data-theme="darkly" id="darktheme"><i class="fas fa-moon"></i> Dark</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -79,13 +87,26 @@
         </div>
     </nav>
 
-    <div class="jumbotron jumbotron-fluid bg-dark">
+    <div id="particles-js" style="
+    width: 100%;
+    height: 25em;
+    background-color: #141E30;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;"></div>
+
+    <div class="jumbotron jumbotron-fluid bg-dark" style="background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(0deg, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(0deg, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12 text-center">
-                    <h1 class="display-4" style="font-family: 'Gentium Basic', serif">Projects</h1>
+                    <h1 class="display-4" style="font-family: 'Gentium Basic', serif">Projects (Code)</h1>
                     <p class="lead">
                         <a href="index.html" class="btn btn-outline-light mb-1">Return to home page</a>
+                        <a href="github.com/apallath" target="_" class="btn btn-outline-light mb-1"><i class="fab fa-github"></i> GitHub</a>
                     </p>
                 </div>
             </div>
@@ -253,7 +274,7 @@
                 <div class="row">
                     <div class="card shadow" style="width:100%">
                         <div class="card-header">
-                            <b>Websites I've developed</b>
+                            <b>Websites I've developed (other than this one)</b>
                         </div>
                         <div class="card-body">
                             <div class="card-deck">
@@ -316,7 +337,10 @@
     </div>
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
+    <footer class="py-5 bg-dark" style="background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(0deg, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(180deg, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ">
         <div class="container m-6 text-white">
             <div class="row">
                 <div class="col-12 col-md">
@@ -348,6 +372,7 @@
                     <h5 class="titlefont">Site Navigation</h5>
                     <ul class="list-unstyled text-small">
                         <li><a class="link-secondary" style="color:#cfd0d2" href="index.html">Home</a></li>
+                        <li><a class="link-secondary" style="color:#cfd0d2" href="research.html">Research</a></li>
                         <li><a class="link-secondary" style="color:#cfd0d2" href="projects.html">Projects</a></li>
                         <li><a class="link-secondary" style="color:#cfd0d2" href="resources.html">Resources</a></li>
                         <li><a class="link-secondary" style="color:#cfd0d2" href="https://apallath.github.io/blog">Blog</a></li>
@@ -426,6 +451,121 @@
             themesheet.attr('href', themeurl);
         });
     });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"></script>
+
+<script>
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 150,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 5,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 4,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "grab"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 140,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
 </script>
 
 </html>

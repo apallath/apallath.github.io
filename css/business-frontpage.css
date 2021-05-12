@@ -1,5 +1,5 @@
 /*!
- * Start Bootstrap - Busines Frontpage (https://startbootstrap.com/template-overviews/business-frontpage)
+ * Start Bootstrap - Business Frontpage (https://startbootstrap.com/template-overviews/business-frontpage)
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-business-frontpage/blob/master/LICENSE)
  */
@@ -30,49 +30,57 @@ ul{
 /* Large desktop */
 @media (min-width: 1200px) {
     .business-header {
-  height: 60vh;
-  min-height: 300px;
-  background-image: var(--background);
-  background-size: 400% 400%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  opacity: 1;
-}
+      height: 60vh;
+      min-height: 300px;
+      background-image: var(--background);
+      background-size: 400% 400%;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+      -o-background-size: cover;
+      opacity: 1;
+    }
+    .vanish-mobile {
+        display: auto;
+    }
 }
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 770px) and (max-width: 1199px) {
     .business-header {
-  height: 60vh;
-  min-height: 300px;
-  background-image: var(--background);
-  background-size: 100% 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  opacity: 0.5;
-}
+      height: 60vh;
+      min-height: 300px;
+      background-image: var(--background);
+      background-size: 100% 100%;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+      -o-background-size: cover;
+      opacity: 0.5;
+    }
+    .vanish-mobile {
+        display: auto;
+    }
 }
 
 /* Phone to portrait tablet */
 @media (min-width: 50px) and (max-width: 769px) {
     .business-header {
-    height: 50vh;
-    min-height: 150px;
-    background-image: var(--background);
-    background-size: 100% 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-  }
-
-  .acadhead{
-     font-size: 48px !important;
-  }
+        height: 50vh;
+        min-height: 150px;
+        background-image: var(--background);
+        background-size: 100% 100%;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+    }
+    .acadhead{
+        font-size: 48px !important;
+    }
+    .vanish-mobile {
+        display: none !important;
+    }
 }
 
 .card {
