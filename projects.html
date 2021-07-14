@@ -124,7 +124,7 @@
         <div class="row">
             <div class="card shadow" style="width:100%">
                 <div class="card-header">
-                    <b>Research software</b>
+                    <b>Research-related software</b>
                 </div>
                 <div class="card-body" id="wham">
                     <img src="wham.jpg" class="rounded float-right" style="height: 120px; width: auto">
@@ -143,19 +143,27 @@
                         Documentation
                     </a>
                 </div>
-                <div class="card-body" id="indusanalysis">
-                    <h5 class="card-title">INDUSAnalysis</h5>
-                    <p class="card-text">
-                        Package for computing, analyzing, and visualizing various order parameters from solvated protein simulation data generated using the in-house implementation of dynamic INDUS in GROMACS.
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="card shadow" style="width:100%">
+                <div class="card-header">
+                    <b>Open-source software for systematic review.</b>
+                </div>
+                <div class="card-body" id="wham">
+                    <h5 class="card-title">paperfetcher</h5>
+                    <p class="card-text">Package to mine papers for systematic review.
                         <br>
                         <span class="badge badge-primary">Python</span>
-                        <span class="badge badge-warning">Tcl</span>
+                        <span class="badge badge-success">Data-mining</span>
                     </p>
-                    <a href="#" target="_blank" class="btn btn-info disabled">
-                        <i class="fab fa-github"></i> Source (Private)
+
+                    <a href="https://github.com/paperfetcher/paperfetcher" target="_blank" class="btn btn-info">
+                        <i class="fab fa-github"></i> Source
                     </a>
-                    <a href="#" target="_blank" class="btn btn-primary disabled">
-                        Documentation (Private)
+                    <a href="https://paperfetcher.github.io/" target="_blank" class="btn btn-primary">
+                        Website
                     </a>
                 </div>
             </div>
@@ -164,7 +172,62 @@
         <div class="row">
             <div class="card shadow" style="width:100%">
                 <div class="card-header">
-                    <b>Scalable parallel software</b>
+                    <b>Machine learning mini-projects</b>
+                </div>
+                <div class="card-body">
+                    <div class="list-group" style="width:100%">
+                        <a href="https://github.com/apallath/generative_art" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Deep Dream and Neural Style Transfer</h5>
+                                <small class="text-muted"><i class="fab fa-github"></i>/apallath</small>
+                            </div>
+                            <p class="mb-1">
+                                Implementation of the Deep Dream and Neural Style Transfer techniques in Keras.
+                            </p>
+                            <span class="badge badge-danger">Keras</span>
+                            <span class="badge badge-info">CNN</span>
+                            &nbsp;
+                            <small class="text-muted float-right">View on <i class="fab fa-github"></i> >></small>
+                        </a>
+                        <a href="https://github.com/apallath/cats_vs_dogs_models" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Cats v/s Dogs image classification models</h5>
+                                <small class="text-muted"><i class="fab fa-github"></i>/apallath</small>
+                            </div>
+                            <p class="mb-1">
+                                Deep learning models for binary image classification using a subset of the Cats and Dogs Kaggle dataset [and their interpretation].
+                            </p>
+                            <span class="badge badge-danger">Keras</span>
+                            <span class="badge badge-info">CNN</span>
+                            <span class="badge badge-info">Transfer learning</span>
+                            <span class="badge badge-info">Model interpretation</span>
+                            &nbsp;
+                            <small class="text-muted float-right">View on <i class="fab fa-github"></i> >></small>
+                        </a>
+                        <a href="https://github.com/apallath/fashion_mnist_models" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Fashion MNIST image classification and generation models</h5>
+                                <small class="text-muted"><i class="fab fa-github"></i>/apallath</small>
+                            </div>
+                            <p class="mb-1">
+                                Deep learning models for multi-class image classification and image generation using the Fashion-MNIST dataset.
+                            </p>
+                            <span class="badge badge-danger">Keras</span>
+                            <span class="badge badge-info">CNN</span>
+                            <span class="badge badge-info">Transfer learning</span>
+                            <span class="badge badge-info">Latent variable models</span>
+                            &nbsp;
+                            <small class="text-muted float-right">View on <i class="fab fa-github"></i> >></small>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="card shadow" style="width:100%">
+                <div class="card-header">
+                    <b>Scalable parallel mini-projects</b>
                 </div>
                 <div class="card-body">
                     <div class="list-group" style="width:100%">
@@ -220,15 +283,6 @@
                                     <p class="mb-1">Implementation of the MESA algorithm described in Chen and Ferguson, 2018 (10.1002/jcc.25520) using PyTorch
                                         and the Python interface to OpenMM.</p>
                                     <span class="badge badge-primary">Python</span> <span class="badge badge-success">ML</span>&nbsp; <small class="text-muted float-right">View on <i class="fab fa-github"></i> >></small>
-                                </a>
-                                <a href="https://github.com/apallath/crossref_miner" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
-                                    <div class="d-flex w-100 justify-content-between">
-                                        <h5 class="mb-1">Library and scripts to mine CrossRef for citations.</h5>
-                                        <small class="text-muted"><i class="fab fa-github"></i>/apallath</small>
-                                    </div>
-                                    <p class="mb-1">Extensible Python library and scripts to mine CrossRef for citations, using its
-                                        REST API. Useful for meta-analysis researchers to automate the process of hand-search.</p>
-                                    <span class="badge badge-primary">Python</span> &nbsp; <small class="text-muted float-right">View on <i class="fab fa-github"></i> >></small>
                                 </a>
                                 <a href="https://github.com/apallath/multiagent_timetable_scheduling" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
                                     <div class="d-flex w-100 justify-content-between">
