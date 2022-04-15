@@ -52,6 +52,9 @@
                         <a class="nav-link" href="#">Research</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="software.html">Software</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="resources.html">Resources</a>
                     </li>
                 </ul>
@@ -126,33 +129,25 @@
                         </div>
                         <div class="card-body">
                             <p>
-                                Water plays a key role in almost every biological process.
-                                Processes such as protein folding
-                                and protein-ligand binding involve complex
-                                protein-water interactions that disrupt water’s local structure.
-                                A major challenge in understanding the mechanisms behind these processes and predicting
-                                how they will occur is quantifying the role of water.
-                            </p>
-                                At the Patel group, I use state of the art molecular simulation and rare-event sampling techniques to study the effects of hydration on protein structure
-                                and interactions. My aim is to use the understanding we gain from these studies to help inform the design of future therapeutics.
+                                Flexible macromolecular solutes such as polymers, peptides, and proteins have the ability adopt a variety of distinct conformational states in solution.
+                                Polymers collapse into globular conformations in poor solvents and adopt extended conformations in good solvents or at favorable physical conditions.
+                                Peptides can fold to form defined secondary structures or adopt random coil configurations.
+                                Proteins can exist in their native folded states, transition to alternate folded conformations in response to binding events, post-translational modifications,
+                                or external forces, and partially or fully denature at low or high temperatures, high pressures, or high salt concentrations.
                             </p>
                             <p>
-                                Researchers often turn to simple model systems to gain insights that will help them understand how complex systems behave.
-                                Small hydrophobic polymers are simple systems that can help inform the design of computational experiments to study proteins.
-                                By studying the behavior of polymers in collaboration with experts in the field, I plan to translate the key insights we learn from polymers
-                                and the methods we develop for them to my work on proteins.
+                                The ability to precisely modulate transitions between the myriad conformational states of proteins, peptides, and polymers has far-reaching applications in biology, ranging from the design
+                                of smart biomaterials to the design and delivery of drugs against specific protein targets.
+                                As these macromolecules are solvated in water in most biological contexts, their conformational transitions disrupt the inherent structure of water
+                                in many different ways, giving rise to rich phenomena such as the hydrophobic effect.
+                                My research is centered on using state of the art molecular simulation and enhanced sampling techniques in conjuction with statistical thermodynamics and liquid state theory to study the complex interplay between hydration
+                                and conformational transitions of proteins, peptides and polymers.
                             </p>
                             <div class="row text-center">
                                 <div class="col-sm-6">
                                     <figure class="figure" style="margin-right: 1em; margin-bottom: 1em">
-                                        <img src="hyd.jpg" style="max-height:300px; max-width:100%" class="rounded">
-                                        <figcaption class="figure-caption">Fig 1: Ubiquitin in water</figcaption>
-                                    </figure>
-                                </div>
-                                <div class="col-sm-6">
-                                    <figure class="figure" style="margin-right: 1em; margin-bottom: 1em">
                                         <img src="solvated_polymer.jpg" style="max-height:300px; max-width:100%" class="rounded">
-                                        <figcaption class="figure-caption">Fig: Snapshot of C<sub>45</sub> in water in
+                                        <figcaption class="figure-caption">Fig 1: Snapshot of C<sub>45</sub> in water in
                                         a transition state between its extended and collapsed basins.
                                         The transition state is characterized by the formation of a locally dewetted
                                         cluster of beads. Dewetted beads are colored red. Waters in the hydration
@@ -161,7 +156,19 @@
                                         </figcaption>
                                     </figure>
                                 </div>
+                                <div class="col-sm-6">
+                                    <figure class="figure" style="margin-right: 1em; margin-bottom: 1em">
+                                        <img src="hyd.jpg" style="max-height:300px; max-width:100%" class="rounded">
+                                        <figcaption class="figure-caption">Fig 2: Ubiquitin in water</figcaption>
+                                    </figure>
+                                </div>
                             </div>
+                            <p>
+                                In addition to performing molecular simulations on massively parallel computational
+                                clusters, my work involves developing rigorous data analysis frameworks and writing software packages to distill insights from large volumes of data.
+                                At times, it also requires developing and implementing advanced simulation techniques to efficiently generate useful data.
+                                Check out my <a href="software.html">Software</a> page and my <a href="github.com/apallath" target+"_blank">Github profile</a> for more on my software development work.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -172,19 +179,52 @@
             <div class="col-sm-12">
                 <div class="row">
                     <div class="list-group shadow" style="width:100%">
+                        <div class="list-group-item list-group-item-danger flex-column align-items-start">
+                            <b>Preprints</b>
+                        </div>
+                        <a href="https://arxiv.org/pdf/2110.12490.pdf" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6> <span class="badge badge-pill badge-secondary">2</span> <b>A Pallath</b> and Q Zhang, "<em>Paperfetcher</em>: A tool to automate handsearch for systematic reviews"
+                                (2022). <em>In revision</em>. </h6>
+                            </div>
+
+                            <br>
+                            <center><figure class="figure">
+                                <img src="2_toc.png" style="max-height:200px; max-width:100%;">
+                            </figure></center>
+                            <br>
+
+                            <span class="badge badge-secondary">information retrieval</span>
+                            <span class="badge badge-secondary">systematic review</span>
+                            <span class="badge badge-secondary">automation</span>
+                            <span class="badge badge-secondary">web app</span>
+
+                            &nbsp;
+
+                            <small class="text-muted float-right">Read preprint on arxiv.org >></small>
+                        </a>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="row">
+                    <div class="list-group shadow" style="width:100%">
                         <div class="list-group-item list-group-item-primary flex-column align-items-start">
-                            <b>Publications</b>
+                            <b>Journal articles</b>
                         </div>
                         <a href="https://doi.org/10.1021/acs.jpcb.1c02191" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
                             <div class="d-flex w-100 justify-content-between">
-                                <h6>D Dhabal, Z Jiang, <b>A Pallath</b> and AJ Patel, "Characterizing the Interplay between Polymer Solvation and Conformation", <b>Journal of Physical Chemistry B</b>,
+                                <h6> <span class="badge badge-pill badge-secondary">1</span> D Dhabal, Z Jiang, <b>A Pallath</b> and AJ Patel, "Characterizing the Interplay between Polymer Solvation and Conformation", <b>Journal of Physical Chemistry B</b>,
                                     <em>published as part of the Lawrence R. Pratt Festschrift Virtual Special Issue</em> (2021).</h6>
                             </div>
+
                             <br>
                             <center><figure class="figure border border-secondary">
                                 <img src="1_toc.png" style="max-height:200px; max-width:100%;">
                             </figure></center>
                             <br>
+
                             <span class="badge badge-secondary">stat-mech</span>
                             <span class="badge badge-secondary">hydrophobicity</span>
                             <span class="badge badge-secondary">polymers</span>
@@ -213,22 +253,17 @@
         <div class="container m-6 text-white">
             <div class="row">
                 <div class="col-12 col-md">
-                    <h5 class="titlefont">Akash Pallath &nbsp;
-                        <a style="color:#cfd0d2" href="https://www.linkedin.com/in/akash-pallath/" target="_"><i class="fab fa-linkedin"></i></a>
-                        <a style="color:#cfd0d2" href="https://github.com/apallath" target="_"><i class="fab fa-github"></i></a>
-                        <a style="color:#cfd0d2" href="https://scholar.google.com/citations?user=Re6OofAAAAAJ&hl=en" target="_"><i class="ai ai-google-scholar"></i></a>
-                    </h5>
+                    <h5 class="titlefont">Akash Pallath</h5>
                     <a class="btn btn-outline-light" href="mailto:apallath@seas.upenn.edu"><i class="fa fa-envelope"></i>&nbsp; apallath@seas.upenn.edu</a>
                     <br><br>
                 </div>
                 <div class="col-6 col-md">
-                    <h5 class="titlefont">External Links</h5>
+                    <h5 class="titlefont">Professional Social Links</h5>
                     <ul class="list-unstyled text-small">
-                        <li><a class="link-secondary" style="color:#cfd0d2" href="http://patelgroup.seas.upenn.edu" target="_blank">Patel Research Group</a></li>
-                        <li><a class="link-secondary" style="color:#cfd0d2" href="https://pics.upenn.edu" target="_blank">Penn Institute for Computational Science</a></li>
-                        <li><a class="link-secondary" style="color:#cfd0d2" href="https://web.sas.upenn.edu/slm" target="_blank">Penn Center for Soft and Living Matter</a></li>
-                        <li><a class="link-secondary" style="color:#cfd0d2" href="https://seas.upenn.edu" target="_blank">Penn Engineering</a></li>
-                        <li><a class="link-secondary" style="color:#cfd0d2" href="https://upenn.edu" target="_blank">University of Pennsylvania</a></li>
+                        <li><a class="link-secondary" style="color:#cfd0d2" href="https://www.linkedin.com/in/akash-pallath/"><i class="fab fa-linkedin fa-fw"></i> LinkedIn</a></li>
+                        <li><a class="link-secondary" style="color:#cfd0d2" href="https://github.com/apallath"><i class="fab fa-github fa-fw"></i> Github</a></li>
+                        <li><a class="link-secondary" style="color:#cfd0d2" href="https://orcid.org/0000-0001-6628-6388"><i class="ai ai-orcid ai-fw"></i> ORCID</a></li>
+                        <li><a class="link-secondary" style="color:#cfd0d2" href="https://scholar.google.com/citations?user=Re6OofAAAAAJ&hl=en"><i class="ai ai-google-scholar ai-fw"></i> Google Scholar</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-md">
@@ -236,13 +271,14 @@
                     <ul class="list-unstyled text-small">
                         <li><a class="link-secondary" style="color:#cfd0d2" href="index.html">Home</a></li>
                         <li><a class="link-secondary" style="color:#cfd0d2" href="research.html">Research</a></li>
+                        <li><a class="link-secondary" style="color:#cfd0d2" href="software.html">Software</a></li>
                         <li><a class="link-secondary" style="color:#cfd0d2" href="resources.html">Resources</a></li>
                     </ul>
                 </div>
             </div>
             <hr class="featurette-divider">
             <small class="float-right"><a style="color:#cfd0d2" href="#">Back to top</a></small>
-            <small style="color:#cfd0d2">&copy; 2021, Akash Pallath</small>
+            <small style="color:#cfd0d2">&copy; 2022, Akash Pallath</small>
         </div>
     </footer>
 </body>
