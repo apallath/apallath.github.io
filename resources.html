@@ -8,41 +8,51 @@
     <meta name="description" content="Akash Pallath">
     <meta name="author" content="Akash Pallath">
 
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Resources | Akash Pallath" />
+    <meta property="og:image" content="images/core-graphic.png" />
+    <meta property="og:description" content="Akash Pallath's resources" />
+    <meta property="og:site_name" content="Akash Pallath" />
+
     <title>Resources | Akash Pallath</title>
 
-    <!--Boostrap-->
-    <!-- CSS only -->
+    <!--Boostrap CSS -->
     <noscript>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     </noscript>
 
-    <!-- JS, Popper.js, and jQuery -->
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
-    <!-- Custom styles for this template -->
-    <link href="css/business-frontpage.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 
     <!-- Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css" rel="stylesheet">
 
-    <!-- Penn fonts -->
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Gentium+Basic&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="css/business-frontpage.css" rel="stylesheet">
+
 </head>
 
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="background: #141E30 !important;">
         <div class="container">
-            <a class="navbar-brand" href="#"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="d-flex order-lg-1 ml-auto pr-2">
+                <li id="theme-button" role="group" class="btn-group">
+                    <a href="#" class="btn btn-outline-secondary theme-link active" data-theme="default" id="lighttheme"><i class="fas fa-sun"></i> Light</a>
+                    <a href="#" class="btn btn-outline-secondary theme-link" data-theme="dark" id="darktheme"><i class="fas fa-moon"></i> Dark</a>
+                </li>
+            </div>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
@@ -71,13 +81,6 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://scholar.google.com/citations?user=Re6OofAAAAAJ&hl=en" target="_"><i class="ai ai-google-scholar"></i></a>
-                    </li>
-                    <li id="theme-button" class="dropdown">
-                        <button href="#" class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">Mode <b class="caret"></b></button>
-                        <ul class="dropdown-menu ">
-                            <li><a href="#" class="dropdown-item theme-link active" data-theme="default" id="lighttheme"><i class="fas fa-sun"></i> Light</a></li>
-                            <li><a href="#" class="dropdown-item theme-link" data-theme="darkly" id="darktheme"><i class="fas fa-moon"></i> Dark</a></li>
-                        </ul>
                     </li>
                 </ul>
             </div>
@@ -277,45 +280,45 @@
 </script>
 
 <script>
-    var themes = {
-        "default": "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css",
-        "darkly": "https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/darkly/bootstrap.min.css",
-    }
+var themes = {
+    "default": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css",
+    "dark": "https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/darkly/bootstrap.min.css",
+}
 
-    $(function() {
-        var themeid = getCookie("theme");
-        if (themeid == "") {
-            var themesheet = $('<link href="' + themes['default'] + '" rel="stylesheet" />');
-            themesheet.appendTo('head');
-            setCookie("theme", 'default', 365)
-        } else {
-            var themesheet = $('<link href="' + themes[themeid] + '" rel="stylesheet" />');
-            themesheet.appendTo('head');
+$(function() {
+    var themeid = getCookie("theme");
+    if (themeid == "") {
+        var themesheet = $('<link href="' + themes['default'] + '" rel="stylesheet" />');
+        themesheet.appendTo('head');
+        setCookie("theme", 'default', 365)
+    } else {
+        var themesheet = $('<link href="' + themes[themeid] + '" rel="stylesheet" />');
+        themesheet.appendTo('head');
 
-            if (themeid == "default") {
-                $("#darktheme").removeClass("active");
-                $("#lighttheme").addClass("active");
-            }
-            if (themeid == "darkly") {
-                $("#lighttheme").removeClass("active");
-                $("#darktheme").addClass("active");
-            }
+        if (themeid == "default") {
+            $("#darktheme").removeClass("active");
+            $("#lighttheme").addClass("active");
         }
-        $('.theme-link').click(function() {
-            //toggle
-            $(".theme-link.active").removeClass("active");
-            $(this).addClass("active")
+        if (themeid == "dark") {
+            $("#lighttheme").removeClass("active");
+            $("#darktheme").addClass("active");
+        }
+    }
+    $('.theme-link').click(function() {
+        //toggle
+        $(".theme-link.active").removeClass("active");
+        $(this).addClass("active")
 
-            //get theme id of selected toggle button
-            var newthemeid = $(this).attr('data-theme');
-            //set cookie
-            setCookie("theme", newthemeid, 365)
-            //get theme url
-            var themeurl = themes[newthemeid];
-            //set theme
-            themesheet.attr('href', themeurl);
-        });
+        //get theme id of selected toggle button
+        var newthemeid = $(this).attr('data-theme');
+        //set cookie
+        setCookie("theme", newthemeid, 365)
+        //get theme url
+        var themeurl = themes[newthemeid];
+        //set theme
+        themesheet.attr('href', themeurl);
     });
+});
 </script>
 
 </html>

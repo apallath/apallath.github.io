@@ -4,14 +4,14 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-business-frontpage/blob/master/LICENSE)
  */
 
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Lato&display=swap');
-
-.titlefont {
-  font-family: 'EB Garamond', serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Lato&family=Roboto+Slab&display=swap');
 
 * {
   font-family: 'Lato', sans-serif;
+}
+
+.titlefont {
+  font-family: 'EB Garamond', serif;
 }
 
 .serif-font {
@@ -22,84 +22,98 @@ body {
   padding-top: 54px;
 }
 
-ul{
+ul {
   list-style-type: square;
 }
 
 #imgacad {
-    transition: -webkit-transform 0.25s ease;
-    transition: transform 0.25s ease;
+  transition: -webkit-transform 0.25s ease;
+  transition: transform 0.25s ease;
 }
 
 #imgacad:active {
-    -webkit-transform: scale(2);
-    transform: scale(2);
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
+
+.jumbotron {
+  color: white;
+}
+
+.element {
+  font-family: 'IBM Plex Mono', monospace !important;
+}
+
+.list-unstyled li {
+  margin: 0.5em 0 !important;
 }
 
 /* Large desktop */
 @media (min-width: 1200px) {
-    .business-header {
-      height: 60vh;
-      min-height: 300px;
-      background-image: var(--background);
-      background-size: 400% 400%;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      background-size: cover;
-      -o-background-size: cover;
-      opacity: 1;
-    }
-    .vanish-mobile {
-        display: auto;
-    }
+  .business-header {
+    height: 60vh;
+    min-height: 300px;
+    background-image: var(--background);
+    background-size: 400% 400%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    opacity: 1;
+  }
+
+  .vanish-mobile {
+    display: auto;
+  }
+
+  .vertical-scroll {
+    height: 100vh;
+    overflow: auto;
+  }
 }
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 770px) and (max-width: 1199px) {
-    .business-header {
-      height: 60vh;
-      min-height: 300px;
-      background-image: var(--background);
-      background-size: 100% 100%;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      background-size: cover;
-      -o-background-size: cover;
-      opacity: 0.5;
-    }
-    .vanish-mobile {
-        display: auto;
-    }
+  .business-header {
+    height: 60vh;
+    min-height: 300px;
+    background-image: var(--background);
+    background-size: 100% 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    opacity: 0.5;
+  }
+
+  .vanish-mobile {
+    display: auto;
+  }
+
+  .vertical-scroll {
+    height: 100vh;
+    overflow: auto;
+  }
 }
 
 /* Phone to portrait tablet */
 @media (min-width: 50px) and (max-width: 769px) {
-    .business-header {
-        height: 50vh;
-        min-height: 150px;
-        background-image: var(--background);
-        background-size: 100% 100%;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        -o-background-size: cover;
-    }
-    .acadhead{
-        font-size: 48px !important;
-    }
-    .vanish-mobile {
-        display: none !important;
-    }
-}
+  .business-header {
+    height: 50vh;
+    min-height: 150px;
+    background-image: var(--background);
+    background-size: 100% 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
 
-.card {
-  height: 100%;
-}
+  .acadhead {
+    font-size: 48px !important;
+  }
 
-.jumbotron {
-    color: white;
-}
-
-.element{
-    font-family: 'IBM Plex Mono', monospace !important;
+  .vanish-mobile {
+    display: none !important;
+  }
 }

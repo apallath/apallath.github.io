@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Lato&family=Roboto+Slab&display=swap');
+
+.titlefont {
+  font-family: 'EB Garamond', serif;
+}
+
+.serif-font {
+  font-family: 'EB Garamond', serif;
+}
+
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+.jumbotron {
+  color: white;
+  height: 100vh;
+  margin-bottom: 0;
+}

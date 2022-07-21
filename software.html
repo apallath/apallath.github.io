@@ -8,41 +8,67 @@
     <meta name="description" content="Akash Pallath">
     <meta name="author" content="Akash Pallath">
 
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Software | Akash Pallath" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/apallath/WHAM/master/wham.svg" />
+    <meta property="og:description" content="Akash Pallath's software" />
+    <meta property="og:site_name" content="Akash Pallath" />
+
     <title>Software | Akash Pallath</title>
 
-    <!--Boostrap-->
-    <!-- CSS only -->
+    <!--Boostrap CSS -->
     <noscript>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+            integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     </noscript>
 
-    <!-- JS, Popper.js, and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
 
-    <!-- Custom styles for this template -->
-    <link href="css/business-frontpage.css" rel="stylesheet">
+    <!-- Masonry -->
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+        async></script>
 
     <!-- Icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css" rel="stylesheet">
 
-    <!-- Penn fonts -->
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Gentium+Basic&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="css/business-frontpage.css" rel="stylesheet">
+    
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#list-example" data-offset="200" style="position: relative;">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="background: #141E30 !important;">
         <div class="container">
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="d-flex order-lg-1 ml-auto pr-2">
+                <li id="theme-button" role="group" class="btn-group">
+                    <a href="#" class="btn btn-outline-secondary theme-link active" data-theme="default"
+                        id="lighttheme"><i class="fas fa-sun"></i> Light</a>
+                    <a href="#" class="btn btn-outline-secondary theme-link" data-theme="dark" id="darktheme"><i
+                            class="fas fa-moon"></i> Dark</a>
+                </li>
+            </div>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
@@ -61,23 +87,20 @@
 
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="https://www.linkedin.com/in/akash-pallath/" target="_"><i class="fab fa-linkedin"></i></a>
+                        <a class="nav-link" href="https://www.linkedin.com/in/akash-pallath/" target="_"><i
+                                class="fab fa-linkedin"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/apallath" target="_"><i class="fab fa-github"></i></a>
+                        <a class="nav-link" href="https://github.com/apallath" target="_"><i
+                                class="fab fa-github"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://orcid.org/0000-0001-6628-6388" target="_"><i class="ai ai-orcid"></i></a>
+                        <a class="nav-link" href="https://orcid.org/0000-0001-6628-6388" target="_"><i
+                                class="ai ai-orcid"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://scholar.google.com/citations?user=Re6OofAAAAAJ&hl=en" target="_"><i class="ai ai-google-scholar"></i></a>
-                    </li>
-                    <li id="theme-button" class="dropdown">
-                        <button href="#" class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">Mode <b class="caret"></b></button>
-                        <ul class="dropdown-menu ">
-                            <li><a href="#" class="dropdown-item theme-link active" data-theme="default" id="lighttheme"><i class="fas fa-sun"></i> Light</a></li>
-                            <li><a href="#" class="dropdown-item theme-link" data-theme="darkly" id="darktheme"><i class="fas fa-moon"></i> Dark</a></li>
-                        </ul>
+                        <a class="nav-link" href="https://scholar.google.com/citations?user=Re6OofAAAAAJ&hl=en"
+                            target="_"><i class="ai ai-google-scholar"></i></a>
                     </li>
                 </ul>
             </div>
@@ -94,7 +117,8 @@
                     <h1 class="display-4 titlefont">Software</h1>
                     <p class="lead">
                         <a href="index.html" class="btn btn-outline-light mb-1">Return to home page</a>
-                        <a href="https://github.com/apallath" class="btn btn-outline-light mb-1" target="_blank"><i class="fab fa-github"></i> Github</a>
+                        <a href="https://github.com/apallath" class="btn btn-outline-light mb-1" target="_blank"><i
+                                class="fab fa-github"></i> Github</a>
                     </p>
                 </div>
             </div>
@@ -102,6 +126,7 @@
     </div>
 
     <!-- Page Content -->
+
     <div class="container">
         <noscript>
             <div class="alert alert-danger center" style="width:100%;" role="alert">
@@ -110,11 +135,299 @@
             </div>
         </noscript>
         <br>
-        <div class="alert alert-warning center" style="width:100%;" role="alert">
-            <h4 class="alert-heading"><i class="fas fa-exclamation-triangle"></i> Under construction!</h4>
-            This page is currently under construction. For now, please check out my <a href="https://github.com/apallath">Github profile</a>!
+
+        <div class="row">
+            <div class="col-lg-2 col-md-3 vanish-mobile">
+                <div id="list-example" class="list-group sticky-top" style="top: 5em; margin-bottom: 2em;">
+                    <div class="list-group-item list-group-item-secondary">Categories</div>
+                    <a class="list-group-item list-group-item-action" href="#list-item-1"><i class="fas fa-file-import fa-fw"></i> Paperfetcher</span></a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-2"><i class="fas fa-atom fa-fw"></i> Molecular Simulation & Analysis</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-3"><i class="fas fa-brain fa-fw"></i> Machine Learning</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-4"><i class="fas fa-project-diagram"></i>Algorithm Implementation</a>
+                </div>
+            </div>
+
+            <div class="col-lg-10 col-md-9">
+                <h2 class="display-5 titlefont" id="list-item-1" style="padding-top:54px; margin-top:-54px;"><i class="fas fa-file-import fa-fw"></i>&nbsp; Paperfetcher</h2>
+                <br>
+
+                <div class="row grid" data-masonry='{"percentPosition": true }'>
+                    <div class="col-sm-6 col-lg-4 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title"><samp>paperfetcher</samp></h4>
+                                <p class="card-text">Python package to automate handsearching and citation chasing 
+                                    for systematic reviews by retrieving bulk bibliographic metadata from various databases.</p>
+                                <hr>
+                                <a href="https://pypi.python.org/pypi/paperfetcher/"><img
+                                        src="https://img.shields.io/pypi/v/paperfetcher.svg"></a>
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://github.com/paperfetcher/paperfetcher" target="_blank"
+                                    class="btn btn-outline-primary btn-sm mb-1"><i
+                                        class="fab fa-github"></i> Github</a>
+                                <a href="https://paperfetcher.github.io/" target="_blank"
+                                    class="btn btn-outline-primary btn-sm mb-1">Website</a>
+                                <a href="https://paperfetcher.github.io/paperfetcher" target="_blank"
+                                    class="btn btn-outline-primary btn-sm mb-1">Documentation</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 mb-4">
+                        <div class="card">
+                            <img class="card-img-top" src="images/toc/2_toc.png">
+                            <div class="card-body">
+                                <h4 class="card-title"><samp>paperfetcher-web-app</samp></h4>
+                                <p class="card-text">Streamlit web-app to automate handsearching and
+                                    citation chasing for systematic reviews.</p>
+                                <hr>
+                                <a href="https://share.streamlit.io/paperfetcher/paperfetcher-web-app/main/paperfetcher_app.py" target="_">
+                                    <img src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg">
+                                </a>
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://github.com/paperfetcher/paperfetcher-web-app" target="_blank"
+                                    class="btn btn-outline-primary btn-sm mb-1" target="_blank"><i
+                                        class="fab fa-github"></i> Github</a>
+                                <a href="https://paperfetcher.github.io/" target="_blank"
+                                    class="btn btn-outline-primary btn-sm mb-1">Website</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <h2 class="display-5 titlefont" id="list-item-2" style="padding-top:72px; margin-top:-54px;"><i class="fas fa-atom fa-fw"></i>&nbsp; Molecular simulation & analysis</h2>
+                <br>
+
+                <div class="row grid" data-masonry='{"percentPosition": true }'>
+                    <div class="col-sm-6 col-lg-4 mb-4">
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="https://raw.githubusercontent.com/apallath/WHAM/master/wham.svg">
+                            <div class="card-body">
+                                <h4 class="card-title"><samp>WHAM</samp></h4>
+                                <p class="card-text">Python package to construct free energy profiles from multiple
+                                    biased simulation trajectories using log-likelihood maximization.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://github.com/apallath/WHAM" class="btn btn-outline-primary btn-sm mb-1"
+                                    target="_blank"><i class="fab fa-github"></i> Github</a>
+                                <a href="https://apallath.github.io/WHAM"
+                                    class="btn btn-outline-primary btn-sm mb-1" target="_blank">Documentation</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 mb-4">
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="images/software/indusanalysis.png">
+                            <div class="card-body">
+                                <h4 class="card-title"><samp>INDUSAnalysis</samp></h4>
+                                <p class="card-text">Python package to generate input data for and analyze molecular dynamics trajectories
+                                    generated by GROMACS patched with INDUS.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-outline-primary btn-sm mb-1 disabled"><i
+                                        class="fab fa-github"></i> Github <span class="badge badge-warning">Currently private</span></a>
+                                <a href="#" class="btn btn-outline-primary btn-sm mb-1 disabled">Documentation <span class="badge badge-warning">Currently private</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title"><samp>pyves</samp></h4>
+                                <p class="card-text">
+                                    Python package to perform variationally enhanced sampling in OpenMM using PyTorch
+                                    and OpenMM-torch for computing analytical and neural network bias potentials 
+                                    and collective variables.
+                                </p>
+                                <hr>
+                                <img src="https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?logo=PyTorch&logoColor=white">
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://github.com/apallath/pyves" class="btn btn-outline-primary btn-sm mb-1"
+                                target="_blank"><i class="fab fa-github"></i> Github</a>
+                            <a href="https://apallath.github.io/pyves"
+                                class="btn btn-outline-primary btn-sm mb-1" target="_blank">Documentation</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 mb-4">
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="images/software/stringmethod.png">
+                            <div class="card-body">
+                                <h4 class="card-title"><samp>stringmethod</samp></h4>
+                                <p class="card-text">Python implementation of the string method to compute the minimum
+                                    energy path between two points in an energy landscape.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://github.com/apallath/stringmethod" class="btn btn-outline-primary btn-sm mb-1" target="_blank"><i
+                                        class="fab fa-github"></i> Github</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 mb-4">
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="images/software/pyib.png">
+                            <div class="card-body">
+                                <h4 class="card-title"><samp>pyib</samp></h4>
+                                <p class="card-text">PyTorch & OpenMM implementations of deep learning based approaches for 
+                                    learning and biasing reaction coordinates in molecular simulations.</p>
+                                <hr>
+                                <img
+                                    src="https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?logo=PyTorch&logoColor=white">
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://github.com/pyib/pyib" class="btn btn-outline-primary btn-sm mb-1" target="_blank"><i
+                                        class="fab fa-github"></i> Github</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Bootstrapping Tutorial</h4>
+                                <p class="card-text">Jupyter notebook tutorial on bootstrapping (and other related methods) for resampling and calculating uncertainties from correlated timeseries data.</p>
+                                <hr>
+                                <a href="https://mybinder.org/v2/gh/apallath/bootstrapping_tutorial/master?filepath=bootstrapping_tutorial.ipynb" target="_">
+                                    <img src="https://img.shields.io/badge/launch-binder-579ACA.svg?logo=data:image/png;base64,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">
+                                </a>
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://github.com/apallath/bootstrapping_tutorial" class="btn btn-outline-primary btn-sm mb-1" target="_blank"><i
+                                    class="fab fa-github"></i> Github</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title"><samp>gcmc</samp></h4>
+                                <p class="card-text">C++ code for Markov Chain Monte Carlo simulations in the grand canonical ensemble.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://github.com/apallath/gcmc" class="btn btn-outline-primary btn-sm mb-1" target="_blank"><i
+                                    class="fab fa-github"></i> Github</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <h2 class="display-5 titlefont" id="list-item-3" style="padding-top:72px; margin-top:-54px;">&nbsp; Machine Learning</h2>
+                <br>
+
+                <div class="row grid" data-masonry='{"percentPosition": true }'>
+                    <div class="col-sm-6 col-lg-4 mb-4">
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="images/software/keras_sklearn.png">
+                            <div class="card-body">
+                                <h4 class="card-title">Keras and Scikit-learn Models</h4>
+                                <p class="card-text">Keras deep learning models for image classification, generation, model interpretation, and deep dreaming,
+                                    and scikit-learn machine learning models for regression, classification, and clustering.</p>
+                                <hr>
+                                <img src="https://img.shields.io/badge/Keras-%23D00000.svg?logo=Keras&logoColor=white">
+                                <img src="https://img.shields.io/badge/scikit--learn-%23F7931E.svg?logo=scikit-learn&logoColor=white">
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://github.com/apallath/keras_sklearn_models" class="btn btn-outline-primary btn-sm mb-1" target="_blank"><i
+                                    class="fab fa-github"></i> Github</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">PyTorch Models</h4>
+                                <p class="card-text">PyTorch convnet, autoencoder, LSTM, and physics-informed neural network models.</p>
+                                <hr>
+                                <img
+                                    src="https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?logo=PyTorch&logoColor=white">
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://github.com/apallath/torch_models" class="btn btn-outline-primary btn-sm mb-1" target="_blank"><i
+                                    class="fab fa-github"></i> Github</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <h2 class="display-5 titlefont" id="list-item-4" style="padding-top:72px; margin-top:-54px;">&nbsp; Algorithm Implementation</h2>
+                <br>
+
+                <div class="row grid" data-masonry='{"percentPosition": true }'>
+                    <div class="col-sm-6 col-lg-4 mb-4">
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="images/software/gameoflife.gif">
+                            <div class="card-body">
+                                <h4 class="card-title">GameOfLife</h4>
+                                <p class="card-text">C++ implementation of Conway's Game of Life 
+                                on a rectangular 2D grid with OpenMP parallelization..</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://github.com/apallath/GameOfLife" class="btn btn-outline-primary btn-sm mb-1" target="_blank"><i
+                                    class="fab fa-github"></i> Github</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 mb-4">
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="https://raw.githubusercontent.com/apallath/multiagent_timetable_scheduling/master/screenshot.png">
+                            <div class="card-body">
+                                <h4 class="card-title">Multiagent timetable scheduler</h4>
+                                <p class="card-text">Netlogo app to solve the simplified timetable scheduling problem
+                                    using mulitple negotating agents, simulated annealing, and the largest degree
+                                    heuristic.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://github.com/apallath/multiagent_timetable_scheduling" class="btn btn-outline-primary btn-sm mb-1" target="_blank"><i
+                                    class="fab fa-github"></i> Github</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Network flow algorithms</h4>
+                                <p class="card-text">Implementation of selected network flow algorithms and programming contest problems
+                                     (from TopCoder and ACM-ICPC).</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://github.com/apallath/network_flow" class="btn btn-outline-primary btn-sm mb-1" target="_blank"><i
+                                    class="fab fa-github"></i> Github</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Parallel algorithms</h4>
+                                <p class="card-text">Implementations of high performance shared and distributed memory parallel algorithms 
+                                    using OpenMP and MPI in C.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://github.com/apallath/parallel_algos" class="btn btn-outline-primary btn-sm mb-1" target="_blank"><i
+                                    class="fab fa-github"></i> Github</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <br>
+
     </div>
 
     <!-- Footer -->
@@ -126,16 +439,24 @@
             <div class="row">
                 <div class="col-12 col-md">
                     <h5 class="titlefont">Akash Pallath</h5>
-                    <a class="btn btn-outline-light" href="mailto:apallath@seas.upenn.edu"><i class="fa fa-envelope"></i>&nbsp; apallath@seas.upenn.edu</a>
+                    <a class="btn btn-outline-light" href="mailto:apallath@seas.upenn.edu"><i
+                            class="fa fa-envelope"></i>&nbsp; apallath@seas.upenn.edu</a>
                     <br><br>
                 </div>
                 <div class="col-6 col-md">
                     <h5 class="titlefont">Professional Social Links</h5>
                     <ul class="list-unstyled text-small">
-                        <li><a class="link-secondary" style="color:#cfd0d2" href="https://www.linkedin.com/in/akash-pallath/"><i class="fab fa-linkedin fa-fw"></i> LinkedIn</a></li>
-                        <li><a class="link-secondary" style="color:#cfd0d2" href="https://github.com/apallath"><i class="fab fa-github fa-fw"></i> Github</a></li>
-                        <li><a class="link-secondary" style="color:#cfd0d2" href="https://orcid.org/0000-0001-6628-6388"><i class="ai ai-orcid ai-fw"></i> ORCID</a></li>
-                        <li><a class="link-secondary" style="color:#cfd0d2" href="https://scholar.google.com/citations?user=Re6OofAAAAAJ&hl=en"><i class="ai ai-google-scholar ai-fw"></i> Google Scholar</a></li>
+                        <li><a class="link-secondary" style="color:#cfd0d2"
+                                href="https://www.linkedin.com/in/akash-pallath/"><i class="fab fa-linkedin fa-fw"></i>
+                                LinkedIn</a></li>
+                        <li><a class="link-secondary" style="color:#cfd0d2" href="https://github.com/apallath"><i
+                                    class="fab fa-github fa-fw"></i> Github</a></li>
+                        <li><a class="link-secondary" style="color:#cfd0d2"
+                                href="https://orcid.org/0000-0001-6628-6388"><i class="ai ai-orcid ai-fw"></i> ORCID</a>
+                        </li>
+                        <li><a class="link-secondary" style="color:#cfd0d2"
+                                href="https://scholar.google.com/citations?user=Re6OofAAAAAJ&hl=en"><i
+                                    class="ai ai-google-scholar ai-fw"></i> Google Scholar</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-md">
@@ -182,11 +503,11 @@
 
 <script>
     var themes = {
-        "default": "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css",
-        "darkly": "https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/darkly/bootstrap.min.css",
+        "default": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css",
+        "dark": "https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/darkly/bootstrap.min.css",
     }
 
-    $(function() {
+    $(function () {
         var themeid = getCookie("theme");
         if (themeid == "") {
             var themesheet = $('<link href="' + themes['default'] + '" rel="stylesheet" />');
@@ -200,12 +521,12 @@
                 $("#darktheme").removeClass("active");
                 $("#lighttheme").addClass("active");
             }
-            if (themeid == "darkly") {
+            if (themeid == "dark") {
                 $("#lighttheme").removeClass("active");
                 $("#darktheme").addClass("active");
             }
         }
-        $('.theme-link').click(function() {
+        $('.theme-link').click(function () {
             //toggle
             $(".theme-link.active").removeClass("active");
             $(this).addClass("active")
@@ -222,4 +543,13 @@
     });
 </script>
 
-</html>
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+
+<script>
+    $('.grid').imagesLoaded(function () {
+        $('.grid').masonry({
+            itemSelector: '.col'
+        });
+        $('.body').scrollspy();
+    });
+</script>
