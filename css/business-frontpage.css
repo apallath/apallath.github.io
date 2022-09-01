@@ -4,18 +4,18 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-business-frontpage/blob/master/LICENSE)
  */
 
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Lato&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ovo&family=Lato&display=swap');
 
 * {
   font-family: 'Lato', sans-serif;
 }
 
 .titlefont {
-  font-family: 'EB Garamond', serif;
+  font-family: 'Ovo', serif;
 }
 
 .serif-font {
-  font-family: 'EB Garamond', serif;
+  font-family: 'Ovo', serif;
 }
 
 body {
@@ -38,10 +38,6 @@ ul {
 
 .jumbotron {
   color: white;
-}
-
-.element {
-  font-family: 'IBM Plex Mono', monospace !important;
 }
 
 .list-unstyled li {
