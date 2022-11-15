@@ -10,9 +10,8 @@
 
     <!-- Metadata tags -->
     <meta name="title" property="og:title" content="Research | Akash Pallath" />
-    <meta name="image" property="og:image" content="images/solvated_ubq.jpg" />
-    <meta name="description" property="og:description" 
-        content="Flexible macromolecular solutes such as polymers, peptides, and proteins have the
+    <meta name="image" property="og:image" content="images/solv_bL.png" />
+    <meta name="description" property="og:description" content="Flexible macromolecular solutes such as polymers, peptides, and proteins have the
         ability adopt a variety of distinct conformational states in solution. The ability to precisely 
         modulate transitions between the myriad conformational states of proteins, peptides, 
         and polymers has far-reaching applications in biology." />
@@ -106,7 +105,7 @@
 
     <!-- Header with Background Image -->
     <div class="business-header parallax-window" data-parallax="scroll" data-speed="0.5"
-        data-image-src="images/solvated_ubq.jpg">
+        data-image-src="images/solv_bL.png">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12" style="position: absolute; bottom: 0; left: 0;">
@@ -149,7 +148,8 @@
                 <div class="row">
                     <div class="card shadow">
                         <div class="card-body">
-                            <h4 class="card-title serif-font">Overview</h4>
+                            <h4 class="card-title serif-font">1. Conformational transitions of flexible macromolecules
+                            </h4>
                             <p>
                                 Flexible macromolecular solutes such as polymers, peptides, and proteins have the
                                 ability adopt a variety of distinct conformational states in solution.
@@ -162,6 +162,15 @@
                                 or external forces, and partially or fully denature at low or high temperatures, high
                                 pressures, or high salt concentrations.
                             </p>
+                            <center>
+                                <figure class="figure" style="margin-right: 1em; margin-bottom: 1em; width: 100%">
+                                    <img src="images/conformational_transitions.png"
+                                        style="max-height:400px; max-width:100%;" />
+                                    <figcaption class="figure-caption">Conformational transitions of polymers, peptides,
+                                        and proteins.
+                                    </figcaption>
+                                </figure>
+                            </center>
                             <p>
                                 The ability to precisely modulate transitions between the myriad conformational states
                                 of proteins, peptides, and polymers has far-reaching applications in biology, ranging
@@ -171,9 +180,9 @@
                                 As these macromolecules are solvated in water in most biological contexts, their
                                 conformational transitions disrupt the inherent structure of water
                                 in many different ways, giving rise to rich phenomena such as the hydrophobic effect.
-                                My research is centered on using state of the art molecular simulation and enhanced
+                                Using state of the art molecular simulation and enhanced
                                 sampling techniques in conjuction with statistical thermodynamics and liquid state
-                                theory to study the complex interplay between hydration
+                                theory, my research focuses on characterizing the complex interplay between hydration
                                 and conformational transitions of proteins, peptides and polymers.
                             </p>
                             <div class="row text-center">
@@ -215,16 +224,52 @@
                                     </figure>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h4 class="card-title serif-font">2. Tools for literature search</h4>
                             <p>
-                                In addition to performing molecular simulations on massively parallel computational
-                                clusters, my work involves developing rigorous data analysis frameworks and writing
-                                software packages to distill insights from large volumes of data.
-                                At times, it also requires developing and implementing advanced simulation techniques to
-                                efficiently generate useful data.
-                                Check out my <a href="software.html">Software</a> page and my <a
-                                    href="https://github.com/apallath" target+"_blank">Github profile</a> for more on my
-                                software development work.
+                                High-quality evidence synthesis relies on surveying and screening through
+                                hundreds to thousands of research articles. The process begins with literature search
+                                using electronic sources, which involves various complementary steps including
+                                bibliographic database search, handsearching, and citation searching.
+                                Some of these steps can be incredibly
+                                time-consuming, often requiring a team of researchers to invest several months of time
+                                for a single project. We are developing powerful cross-platform computational tools to
+                                help accelerate the process of literature search.
                             </p>
+                            <div class="row text-center">
+                                <div class="col-md-6">
+                                    <figure class="figure" style="margin-right: 1em; margin-bottom: 1em; width: 100%">
+                                        <img src="images/toc/2_toc.png" style="max-height:400px; max-width:100%;" />
+                                        <figcaption class="figure-caption">Screenshot of the Paperfetcher web-app.
+                                            To learn more, visit <a href="https://paperfetcher.github.io/"
+                                                target="_">Paperfetcher's webpage</a> and read our <a href="#paper2">Res
+                                                Synth Meth paper</a>.
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-md-6">
+                                    <figure class="figure" style="margin-right: 1em; margin-bottom: 1em; width: 100%">
+                                        <img src="images/paperfetcher-flowchart.png"
+                                            style="max-height:400px; max-width:100%;" />
+                                        <figcaption class="figure-caption">Overview of the Paperfetcher Python package.
+                                            To learn more, visit <a href="https://paperfetcher.github.io/"
+                                                target="_">Paperfetcher's webpage</a> and read our <a href="#paper2">Res
+                                                Synth Meth paper</a>.
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="alert alert-dark d-flex align-items-center" role="alert">
+                                To learn more about our tools, visit &nbsp;
+                                <a href="https://paperfetcher.github.io" target="_"
+                                    class="alert-link">paperfetcher.github.io</a>.
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -251,8 +296,10 @@
                         <a href="https://onlinelibrary.wiley.com/doi/10.1002/jrsm.1604" target="_blank"
                             class="list-group-item list-group-item-action flex-column align-items-start">
                             <div id="paper2" class="d-flex w-100 justify-content-between">
-                                <h6> <span class="badge badge-pill badge-secondary">2</span> <b>Pallath, A.</b>, & Zhang, Q. (2022). 
-                                    <em>Paperfetcher</em>: A tool to automate handsearching and citation searching for systematic reviews. 
+                                <h6> <span class="badge badge-pill badge-secondary">2</span> <b>Pallath, A.</b>, &
+                                    Zhang, Q. (2022).
+                                    <em>Paperfetcher</em>: A tool to automate handsearching and citation searching for
+                                    systematic reviews.
                                     <i><b>Research Synthesis Methods</b></i>. <em>Software Focus</em>.
                                 </h6>
                             </div>
@@ -272,10 +319,13 @@
                         <a href="https://doi.org/10.1021/acs.jpcb.1c02191" target="_blank"
                             class="list-group-item list-group-item-action flex-column align-items-start">
                             <div id="paper1" class="d-flex w-100 justify-content-between">
-                                <h6> <span class="badge badge-pill badge-secondary">1</span> Dhabal, D., Jiang, Z., <b>Pallath, A.</b>, & Patel, A. J. (2021).
+                                <h6> <span class="badge badge-pill badge-secondary">1</span> Dhabal, D., Jiang, Z.,
+                                    <b>Pallath, A.</b>, & Patel, A. J. (2021).
                                     Characterizing the interplay between polymer
-                                    solvation and conformation. <i><b>The Journal of Physical Chemistry B</b>, 125</i>(20), 5434-5442.
-                                    <em>Published as part of the Lawrence R. Pratt Festschrift Virtual Special Issue</em>.
+                                    solvation and conformation. <i><b>The Journal of Physical Chemistry B</b>,
+                                        125</i>(20), 5434-5442.
+                                    <em>Published as part of the Lawrence R. Pratt Festschrift Virtual Special
+                                        Issue</em>.
                                 </h6>
                             </div>
 
@@ -341,7 +391,9 @@
             </div>
             <hr class="featurette-divider">
             <small class="float-right"><a style="color:#cfd0d2" href="#">Back to top</a></small>
-            <small style="color:#cfd0d2">&copy; 2022, Akash Pallath</small>
+            <small style="color:#cfd0d2">&copy; 2019 -
+                <script>document.write(new Date().getFullYear())</script>, Akash Pallath
+            </small>
         </div>
     </footer>
 </body>
