@@ -105,7 +105,7 @@
 
     <!-- Header with Background Image -->
     <div class="business-header parallax-window" data-parallax="scroll" data-speed="0.5"
-        data-image-src="images/solv_bL.png">
+        data-image-src="images/solvated_merged.png">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12" style="position: absolute; bottom: 0; left: 0;">
@@ -266,7 +266,7 @@
                                 </div>
                             </div>
                             <div class="alert alert-dark d-flex align-items-center" role="alert">
-                                To learn more about our tools, visit &nbsp;
+                                To learn more about our tools, visit&nbsp;
                                 <a href="https://paperfetcher.github.io" target="_"
                                     class="alert-link">paperfetcher.github.io</a>.
                             </div>
@@ -398,7 +398,9 @@
     </footer>
 </body>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/3Dmol/1.7.0/3Dmol-min.js" integrity="sha512-vep5Y+hl/FG2DklFIwk2LhNnBM1LlUJehPcWNh0EFtTpV7g3y4QnqUMGSbBMOdx/mClcuEuMw/JOIcy+e1bTbA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/3Dmol/1.7.0/3Dmol-min.js"
+    integrity="sha512-vep5Y+hl/FG2DklFIwk2LhNnBM1LlUJehPcWNh0EFtTpV7g3y4QnqUMGSbBMOdx/mClcuEuMw/JOIcy+e1bTbA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script>
     var polyviewer = null;
@@ -431,7 +433,7 @@
         ubqviewer.addStyle({ resn: 'SOL' }, { sphere: { color: 'blue', scale: "0.05" } });
         ubqviewer.zoomTo();
         ubqviewer.rotate(180, { x: 0, y: -1, z: 1 });
-        //ubqviewer.zoom(2.5, 1000);
+        ubqviewer.zoom(2.5, 1000);
         ubqviewer.render();
     });
 </script>
