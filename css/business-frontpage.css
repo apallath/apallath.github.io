@@ -4,10 +4,11 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-business-frontpage/blob/master/LICENSE)
  */
 
-@import url('https://fonts.googleapis.com/css2?family=Ovo&family=Lato&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Ovo&display=swap'); 
 
 * {
-  font-family: 'Lato', sans-serif;
+  font-family: "Libre Franklin", sans-serif;
+  font-optical-sizing: auto;
 }
 
 html {
@@ -15,11 +16,11 @@ html {
 }
 
 .titlefont {
-  font-family: 'Ovo', serif;
+  font-family: "Ovo", serif;
 }
 
 .serif-font {
-  font-family: 'Ovo', serif;
+  font-family: "Ovo", serif;
 }
 
 body {
